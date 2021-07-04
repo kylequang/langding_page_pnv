@@ -1,0 +1,78 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+// .sharing{
+
+// }
+.content {
+    position: relative;
+    right: 3em;
+    h4 {
+        color: black;
+        text-align: justify;
+    }
+    h5 {
+        font-weight: bold;
+        color: black;
+        text-align: right;
+    }
+    p {
+        font-weight: 90;
+        color: black;
+        text-align: right;
+    }
+}
+
+.align-items-center {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    h2 {
+        text-align: center;
+        color: deepskyblue;
+
+        font-weight: 500;
+    }
+}
+.date {
+    h2 {
+        color: white;
+    }
+    button {
+        position: relative;
+        bottom: 4em;
+        right: 30%;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        &:hover {
+            background-color: coral;
+            border-color: coral;
+            border: 3px solid coral;
+            color: white;
+        }
+    }
+}
+.blog_detail {
+    position: relative;
+    bottom: 3em;
+    text-align: left;
+    a {
+        color: black;
+        font-size: 170%;
+        text-align: left;
+        &:hover {
+            color: dodgerblue;
+        }
+    }
+    h5 {
+        color: black;
+        text-align: left;
+        a {
+            color: deepskyblue;
+            font-size: 100%;
+            &:hover {
+                color: rgb(26, 21, 26);
+            }
+        }
+    }
+}

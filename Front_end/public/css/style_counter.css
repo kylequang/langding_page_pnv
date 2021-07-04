@@ -1,0 +1,106 @@
+/*----------------------------------------------------*/
+
+.countarup_area {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-image: -moz-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    background-image: -webkit-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    background-image: -ms-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.countarup_area:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background: url("../images/counter-shap.png") no-repeat center top;
+    height: 100%;
+    z-index: -1;
+}
+
+.countarup_area .counter_item {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.countarup_area .counter_item i:before {
+    font-size: 66px;
+    color: #fd7611;
+    line-height: 1;
+}
+
+.countarup_area .counter_item h4 {
+    font: 100 15px/1 "Muli", sans-serif;
+    color: #272626;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.countarup_area .counter_item h2 {
+    font: 500 40px/1 "Comfortaa", cursive;
+    color: #555252;
+    padding-top: 30px;
+}
+
+.countarup_area p {
+    font: 600 22px/36px "Muli", sans-serif;
+    color: #555252;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0 65px;
+}
+
+.countarup_area p span {
+    color: #fd7611;
+}
+
+.countarup_area .wath_video {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.countarup_area .wath_video:after {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 54px;
+    width: 100%;
+    height: 1px;
+    background: #ffecdd;
+    z-index: -1;
+}
+
+.countarup_area .wath_video .popup-youtube {
+    height: 108px;
+    line-height: 108px;
+    width: 108px;
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    background: #fc7163;
+    display: block;
+    color: #fff;
+    box-shadow: 0px 20px 55px 0px rgba(144, 134, 127, 0.42);
+    animation: pulseBig 2s infinite;
+}
+
+.countarup_area .wath_video .popup-youtube i:before {
+    font-size: 30px;
+}
+
+.ca_3 .wath_video .popup-youtube {
+    background: #fd7611;
+}
+
+
+/*----------------------------------------------------*/

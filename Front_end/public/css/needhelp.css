@@ -1,0 +1,104 @@
+.people_amazing {
+  display: block;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.people_amazing .people_content .tittle_shap {
+  animation: rotation 10s linear infinite;
+}
+
+.people_amazing .people_content h4 {
+  text-align: left;
+  font: 700 24px/38px "Comfortaa", cursive;
+  color: #fd7611;
+  padding: 20px 0 15px;
+  max-width: 315px;
+}
+
+.people_amazing .people_content h2 {
+  text-align: left;
+  font: 700 38px/52px "Comfortaa", cursive;
+  color: #22bbea;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.people_amazing .people_content h2:after {
+  content: "";
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 58px;
+  background: #fd7611;
+}
+
+.people_amazing .people_content p {
+  text-align: left;
+  font-size: 18px;
+  padding-top: 10px;
+  max-width: 620px;
+}
+
+.people_amazing .people_content .video_p p {
+  font-size: 16px;
+  color: rgba(1, 1, 1, 0.702);
+  padding-top: 20px;
+  max-width: 400px;
+}
+
+.people_amazing .people_content .video_p p:first-child {
+  padding-top: 55px;
+}
+
+.people_amazing .people_content .video_p .popup-youtube {
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  height: 236px;
+  width: 236px;
+  line-height: 236px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  margin-top: 35px;
+  margin-left: 20px;
+  animation: pulseBig 2s infinite;
+}
+
+.people_amazing .people_content .video_p .popup-youtube:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  transition: all 300ms linear 0s;
+}
+
+.people_amazing .people_content .video_p .popup-youtube img {
+  max-width: 100%;
+}
+
+.people_amazing .people_content .video_p .popup-youtube i:before {
+  color: #fff;
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.people_amazing .people_content .video_p .popup-youtube:hover:after,
+.people_amazing .people_content .video_p .popup-youtube:focus:after {
+  opacity: 0;
+}
+
+.people_amazing .people_img {
+  padding-top: 100px;
+}

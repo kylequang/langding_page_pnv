@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Mainvalue;
+use App\Models\Staff;
 
-class Mainvalue_Controller extends Controller
+class Staff_Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class Mainvalue_Controller extends Controller
      */
     public function index()
     {
-        $mainvalues = Mainvalue::all();
-        return response()->json($mainvalues);
+        $staff=Staff::all();
+        return response()->json($staff);
     }
 
     /**
@@ -47,8 +47,7 @@ class Mainvalue_Controller extends Controller
      */
     public function show($id)
     {
-        $mainvalue = Mainvalue::findOrFail($id);
-        return response()->json($mainvalue);
+        //
     }
 
     /**

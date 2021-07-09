@@ -1,0 +1,66 @@
+/* css Header_Top phần chạy chữ */
+.header-top {
+  /* padding: 10px 2px; */
+  background: #22bbea;
+}
+#run_text marquee {
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .header-top .fh5co-link {
+    text-align: center;
+  }
+}
+
+/* Css Header main */
+
+#fh5co-menu-wrap {
+  position: relative;
+  z-index: 2;
+  display: block;
+  float: right;
+  margin-top: 15px;
+}
+#fh5co-menu-wrap .sf-menu a {
+  padding: 1em 0.75em;
+}
+
+/* .header-top .fh5co-social a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-right: 15px;
+  position: relative;
+  -webkit-transition: 0.5s, ease-in-out;
+  -o-transition: 0.5s, ease-in-out;
+  transition: 0.5s, ease-in-out;
+}
+.header-top .fh5co-social a:last-child {
+  margin-right: 0;
+}
+.header-top .fh5co-social a:hover,
+.header-top .fh5co-social a:focus,
+.header-top .fh5co-social a:active {
+  text-decoration: none;
+  color: white !important;
+}
+.header-top .fh5co-social a:hover i,
+.header-top .fh5co-social a:focus i,
+.header-top .fh5co-social a:active i {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#run_text marquee {
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .header-top .fh5co-social {
+    text-align: center !important;
+  }
+} */

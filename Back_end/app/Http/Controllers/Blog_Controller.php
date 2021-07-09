@@ -3,19 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Mainvalue;
-
-class Mainvalue_Controller extends Controller
+use App\Models\Blog;
+use Carbon\Carbon;
+class Blog_Controller extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $mainvalues = Mainvalue::all();
-        return response()->json($mainvalues);
+        $blog_content=Blog::all();
+        return response()->json($blog_content);
     }
 
     /**
@@ -36,7 +36,8 @@ class Mainvalue_Controller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+       
     }
 
     /**
@@ -47,8 +48,7 @@ class Mainvalue_Controller extends Controller
      */
     public function show($id)
     {
-        $mainvalue = Mainvalue::findOrFail($id);
-        return response()->json($mainvalue);
+        //
     }
 
     /**

@@ -47,7 +47,8 @@ class Mainvalue_Controller extends Controller
      */
     public function show($id)
     {
-        //
+        $mainvalues = Mainvalue::findOrfail($id);
+        return response()->json($mainvalues);
     }
 
     /**

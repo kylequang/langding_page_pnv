@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
+import './header.css';
 import {
     BrowserRouter as Router,
     Switch,
@@ -6,18 +8,32 @@ import {
     Link
 } from "react-router-dom";
 import { Container,Button, Row, Col,Navbar,Brand,Nav,Form,FormControl } from 'react-bootstrap';
-import Header_Top from './Header_Top';
+import Header_Top from '../Header_Top';
 class Header extends Component {
+    
+   function($) {   
+        //selector đến menu cần làm việc
+        var TopFixMenu = $("#fixNav");
+        // dùng sự kiện cuộn chuột để bắt thông tin đã cuộn được chiều dài là bao nhiêu.
+          $(window).scroll(function(){
+          // Nếu cuộn được hơn 150px rồi
+              if($(this).scrollTop()>150){
+            // Tiến hành show menu ra   
+              TopFixMenu.show();
+              }else{
+            // Ngược lại, nhỏ hơn 150px thì hide menu đi.
+                  TopFixMenu.hide();
+              }}
+          )
+      }
+
     render() {
         return (
+            <>
             <Container fluid fixed-top >
-                {/* Header top chạy chữ */}
-                
-                    <Header_Top></Header_Top>
-
-                {/* header navigation */}
-                <header >
-                    <Container fluid>
+                <Header_Top></Header_Top>
+                <Nav id="fixNav">
+                <Container fluid>
                         <Row>
                             <Col sm={1} md={1} lg={1}>
                                 <img src="images/logo_homepage.png" style={{ height: '60px', marginTop: '10px', marginBottom: '10px', marginLeft: '20px' }} />
@@ -50,9 +66,11 @@ class Header extends Component {
 
                         </Row>
                     </Container>
-                </header>
+                </Nav>
             </Container>
+          </>
         );
     }
 }
+
 export default Header;

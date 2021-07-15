@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Container, Accordion, Card, Image, Button } from "react-bootstrap";
+import { Container, Row, Card, Image, Button } from "react-bootstrap";
+import './css/partner.scss';
+import Call_API  from '../../services/CallAPI';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -19,48 +21,108 @@ import logo12 from "../../components/Images/Partner/motorola-solutions-foundatio
 import logo13 from "../../components/Images/Partner/PYCO_Square-400x284.png";
 import logo14 from "../../components/Images/Partner/Thales_logo.jpg";
 class IndexPartner extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            partners: [],
+        }
+    }   
+    componentDidMount = async () => {
+        await Call_API(`partner`, 'GET', null).then((item) => {
+            this.setState({
+                partners: item.data,
+            })
+        })
+    }
     render() {
+        const {partners} = this.state;
+        let partnersDetails = [];
+        if (partners.length) {
+            partnersDetails = partners.map((partner) => {
+            return (
+                <div class="item">
+                    <details>
+                        <summary>
+                            <Image
+                                src={partner.image}
+                                alt={partner.image}
+                                height="30%"
+                                width="30%"
+                            />
+                        </summary>
+                        <p>{partner.description}</p>
+                    </details>
+            </div>
+            );
+            });
+        }
         return (
             <>
                 <Container>
+                
+                <Row><h2>Các đối tác chính của PN</h2></Row>  
+                   
                     <OwlCarousel
                         className="owl-theme"
                         items={4}
                         loop
                         margin={15}
                         autoplay={true}
-                    >
+                    >   
+                        {partnersDetails}
+                          
                         <div class="item">
-                            <Image
-                                src={logo1}
-                                alt="Owl Image"
-                                height="30%"
-                                width="30%"
-                            />
+                            <details>
+                                <summary>
+                                    <Image
+                                        src={logo1}
+                                        alt="Owl Image"
+                                        height="30%"
+                                        width="30%"
+                                    />
+                                </summary>
+                            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                            </details>
+                        </div>
+                        
+                        <div class="item">
+                            <details>
+                                <summary>
+                                    <Image
+                                        src={logo2}
+                                        alt="Owl Image"
+                                        height="30%"
+                                        width="30%"
+                                    />
+                                </summary>
+                                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                            </details>
                         </div>
                         <div class="item">
-                            <Image
-                                src={logo2}
-                                alt="Owl Image"
-                                height="30%"
-                                width="30%"
-                            />
+                            <details>
+                                <summary>
+                                    <Image
+                                        src={logo3}
+                                        alt="Owl Image"
+                                        height="30%"
+                                        width="30%"
+                                    />
+                                </summary>
+                                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                            </details>
                         </div>
                         <div class="item">
-                            <Image
-                                src={logo3}
-                                alt="Owl Image"
-                                height="30%"
-                                width="30%"
-                            />
-                        </div>
-                        <div class="item">
-                            <Image
-                                src={logo4}
-                                alt="Owl Image"
-                                height="30%"
-                                width="30%"
-                            />
+                            <details>
+                                <summary>
+                                    <Image
+                                        src={logo4}
+                                        alt="Owl Image"
+                                        height="30%"
+                                        width="30%"
+                                    />
+                                </summary>
+                                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                            </details>
                         </div>
                         <div class="item">
                             <Image
@@ -69,7 +131,7 @@ class IndexPartner extends Component {
                                 height="30%"
                                 width="30%"
                             />
-                        </div>
+                        </div> 
                         <div class="item">
                             <Image
                                 src={logo6}

@@ -15,6 +15,7 @@ import Index_Blog from "./pages/Blog/Index_Blog";
 import Index_Contact from "./pages/Contact/Index_Contact";
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 function App() {
   return (
     <React.Fragment>

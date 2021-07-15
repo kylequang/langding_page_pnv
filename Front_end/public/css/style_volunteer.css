@@ -1,63 +1,63 @@
 .become_volunter {
-    display: block;
-    overflow: hidden;
-    padding: 30px 0;
+  display: block;
+  overflow: hidden;
+  padding: 30px 0;
 }
 
 .become_volunter h2 {
-    font: 700 30px "Comfortaa", cursive;
-    color: #22bbea;
-    text-transform: uppercase;
+  font: 700 30px "Comfortaa", cursive;
+  color: #22bbea;
+  text-transform: uppercase;
 }
 
 .become_volunter p {
-    color: #22bbea;
-    padding-top: 20px;
+  color: #22bbea;
+  padding-top: 20px;
 }
 
 .become_volunter .theme_btn {
-    box-shadow: none;
-    min-width: 200px;
-    margin-top: 15px;
+  box-shadow: none;
+  min-width: 200px;
+  margin-top: 15px;
 }
 
 .become_volunter .volunter_row {
-    z-index: 1;
-    padding: 70px 45px 120px;
-    position: relative;
+  z-index: 1;
+  padding: 70px 45px 120px;
+  position: relative;
 }
 
 .become_volunter .volunter_row {
-    /* background: #fff; */
-    box-shadow: 0px 19px 69px 0px rgba(178, 178, 185, 0.35);
-    padding: 60px 30px;
-    background: url("../images/volunter-bg.png") no-repeat;
+  /* background: #fff; */
+  box-shadow: 0px 19px 69px 0px rgba(178, 178, 185, 0.35);
+  padding: 60px 30px;
+  background: url("../images/volunter-bg.png") no-repeat;
 }
 
 .become_volunter .volunter_row:after {
-    content: "";
-    position: absolute;
-    top: -40px;
-    bottom: 0;
-    left: -50px;
-    right: -50px;
-    background: url("../images/volunter-bg.png") no-repeat;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: -40px;
+  bottom: 0;
+  left: -50px;
+  right: -50px;
+  background: url("../images/volunter-bg.png") no-repeat;
+  z-index: -1;
 }
 
 .become_volunter {
-    padding-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .become_volunter .volunter_row:after {
-    display: none;
+  display: none;
 }
 
 .become_volunter {
-    text-align: center;
+  text-align: center;
 }
 
 .become_volunter h2 {
-    font-size: 20px;
-    line-height: 30px;
+  font-size: 20px;
+  line-height: 30px;
 }

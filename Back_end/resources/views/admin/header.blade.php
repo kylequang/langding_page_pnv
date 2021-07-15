@@ -115,7 +115,7 @@
                             <a href="waitingfor">Chia sẻ cá nhân</a>
                         </li>
                         <li>
-                            <a href="waitingfordelivery">Sự kiện</a>
+                            <a href="blog_event">Sự kiện</a>
                         </li>
                       
                     </ul>

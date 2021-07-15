@@ -190,6 +190,26 @@ create table students(
 
 
 
+CREATE TABLE `itnuoiits` (
+  `id` int(11) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `content` varchar(100) NOT NULL,
+  `type` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `itnuoiits`
+--
+
+INSERT INTO `itnuoiits` (`id`, `image`, `content`, `type`) VALUES
+(2, 'donate.jpg', 'Quỹ hoạt động của PN đến từ Grant của các tập đoàn lớn', 'donate'),
+(3, 'benefit2.png', 'Thư cập nhật thông tin chuyển khoản hàng tháng', 'benefit'),
+(4, 'benefit1.png', 'Giấy chứng nhận đã tham gia chương trình IT nuôi IT', 'benefit'),
+(6, 'benefit3.jpg', 'Thăm trường PNV và các em sinh viên', 'benefit');
+
+
+
+
 
 
 

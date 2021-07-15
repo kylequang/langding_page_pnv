@@ -1,31 +1,24 @@
 import React, { Component } from "react";
 import Slider from "./Slider";
 import Milestones from "./Milestones";
-import Found from "./Found";
+import Foundation from "./Found";
 import History from "./History";
 import OurGallery from "./OurGallery";
-import Leadership from "./Leadership";
-import "./css/style_timeline.css";
-import "./css/animate.css";
+import Department from "./Department";
 
 class Index_About extends Component {
-    render() {
-        return (
-            <div>
-                <Slider></Slider>
-
-                <History></History>
-
-                <Found></Found>
-
-                <Milestones></Milestones>
-
-                <OurGallery></OurGallery>
-
-                <Leadership></Leadership>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <>
+        <Slider></Slider>
+        <History></History>
+        <Foundation></Foundation>
+        <Milestones></Milestones>
+        <OurGallery></OurGallery>
+        <Department></Department>
+      </>
+    );
+  }
 }
 
 export default Index_About;

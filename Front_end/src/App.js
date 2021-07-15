@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from 'react-bootstrap';
-import './App.css';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,24 +17,20 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 function App() {
   return (
-    <React.Fragment>
-      <Router>
-        <Container fluid className="App">
-          <Header></Header>
-          <Container fluid className="wrapper">
-            <Switch>
-              <Route exact path='/' component={Index} />
-              <Route path='/donate' component={Index_Donation} />
-              <Route path='/itnuoiit' component={Index_ItNuoiIt} />
-              <Route path='/about' component={Index_About} />
-              <Route path='/blog' component={Index_Blog} />
-              <Route path="/contact" exact component={Index_Contact} />
-            </Switch>
-          </Container>
-          <Footer></Footer>
-        </Container>
-      </Router>
-    </React.Fragment>
+    <Router>
+      <Header></Header>
+      <Container fluid className="App">
+        <Switch>
+          <Route exact path='/' component={Index} />
+          <Route path='/donate' component={Index_Donation} />
+          <Route path='/itnuoiit' component={Index_ItNuoiIt} />
+          <Route path='/about' component={Index_About} />
+          <Route path='/blog' component={Index_Blog} />
+          <Route path="/contact" exact component={Index_Contact} />
+        </Switch>
+      </Container>
+      <Footer></Footer>
+    </Router>
   );
 }
 export default App;

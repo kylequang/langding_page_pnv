@@ -10,6 +10,6 @@ class Mainvalue extends Model
     use HasFactory;
     protected $table='main_value';
     protected $fillable = [
-        'id_pn','name_value', 'description'
+        'id_pn','name_value', 'description','icon'
     ];
 }

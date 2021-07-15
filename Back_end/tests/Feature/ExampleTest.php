@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Mainvalue;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -19,7 +20,7 @@ class ExampleTest extends TestCase
          $view = $this->view('homepage');
          //trả về true nếu tìm thấy chuỗi trong view.... (toàn bộ code của view)
          // $view->assertSee('kỳ');
- 
+        
          $view->assertSee('app');
          //$view->assertSee("kỳ nè");
          //nội dung hiển thị trong view
@@ -28,18 +29,31 @@ class ExampleTest extends TestCase
          // $view->assertDontSeeText("app");//true khi không tìm thấy 
          $view=$this->view('Admin.index');
          $test='file';
-         $view->assertSee($test);   
+         $view->assertSee($test);
+
+
+        //  $view=$this->view('Admin.homepage');
+
+         
+        $response = $this->get('/');
+        //$this->assertContains('mainvalues', $response->content());
+        $response->assertViewHas('mainvalues');
+        //$response->assertSee('Mainvalue');
+        //$response->assertSee('âsas ');
      }
      public function test_making_an_api_request()
      {
          //Test method Get
          $response = $this->json('GET', 'http://localhost:8000/api/mainvalue/1');
  
+
+         $dt=Mainvalue::findOrfail(1);
+         
          //kiểm tra trôi chảy các phản hồi JSON của ứng dụng của bạn
          $response->assertJson(fn (AssertableJson $data) =>
-                 $data->where('id',1)
+                 $data->where('id',$dt->id)
                      //->where('id_pn',1)
-                      //->where('name_value', 'Đoàn kết')
+                      ->where('name_value', $dt->name_value)
                       //->where('descriptions', "Cùng thất bại, cùng thành công - Cùng giúp đỡ khi khó khăn")
                       ->etc() // dùng khi ko cần truy xuất hết và bảo vệ thông tin 
              );  

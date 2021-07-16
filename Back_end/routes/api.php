@@ -13,4 +13,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('mainvalue', Mainvalue_Controller::class);
 Route::resource('buildfoudation', Buildfoudation_Controller::class);
-
+Route::get('ITnuoiIT', 'App\Http\Controllers\ITnuoiIT_Controller@index');

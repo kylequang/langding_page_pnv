@@ -1,41 +1,161 @@
 #form li {
-    list-style: none;
-    font-size: 19px;
-    text-align: left;
+  list-style: none;
+  font-size: 17px;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 20px;
+  
 }
+
+#form li a{
+  color: #f7005f;
+}
+
+#run_text marquee {
+  font-size: 23px;
+  color: white;
+  height: 65px;
+  background: #1d2e4e;
+  font-weight: bold;
+}
+#form h3{
+  text-align: center;
+  margin-right: 25px;
+  color: #ff0101;
+}
+
+#nhap input{
+  color: #500808;
+  font-weight: bold;
+
+}
+
+.formNhap{
+  background-color: rgb(243 242 184);
+  padding: auto;
+  border-radius: 3px;
+}
+.diachi{
+  background-color: #deebf3;
+  border-radius : 3px;
+}
+
 #form {
-    margin-top: 100px;
-    margin-bottom: 70px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  width: 100%;
 }
 #form h3 {
-    font-weight: bold;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    font-size: 25px;
-    color: black;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: black;
 }
 .container {
-    font-size: 30px;
+  font-size: 30px;
 }
 #gioithieu {
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 10px;
-    height: 250px;
-    background-image: url("https://www.sanofi.com.vn/-/media/Project/One-Sanofi-Web/Websites/Asia-Pacific/Sanofi-VN/Home/trach-nhiem-xa-hoi-va-cong-dong/hoat-dong-tu-thien/Herobanner_32_1920x690.jpeg");
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 10px;
+  height: 250px;
+ position: relative;
 }
 #noidung h1 {
-    margin-top: 100px;
-    color: chocolate;
-    font-size: 50px;
+  margin-top: 100px;
+  color: rgb(172, 69, 10);
+  font-size: 50px;
+}
+.full_noidung{
+  position: absolute;
+  background-image: url("https://www.sanofi.com.vn/-/media/Project/One-Sanofi-Web/Websites/Asia-Pacific/Sanofi-VN/Home/trach-nhiem-xa-hoi-va-cong-dong/hoat-dong-tu-thien/Herobanner_32_1920x690.jpeg");
+  left: -10%;
+  right: -10%;
+  top: 0;
+  height: 100%;
+  border-radius: 10px;
 }
 #map {
-    margin-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
+
 #nhap input {
-    height: 40px;
-    font-size: 20px;
+  height: 30px;
+  font-size: 15px;
 }
 #nhap textarea {
-    font-size: 20px;
+  font-size: 20px;
 }
+
+@media only screen and (max-width: 1005px) {
+  #map iframe {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 977px) {
+  #infor ul li a {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 755px) {
+  #map iframe {
+    width: 550px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #map iframe {
+    width: 330px;
+    border-radius: 10px;
+  }
+  #infor ul li a {
+    font-size: 10px;
+  text-align: center;
+  }
+  #noidung h1 {
+    color: chocolate;
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+  .diachi{
+    margin-bottom: 20px;
+  }
+  #gioithieu {
+    border-radius: 20px;
+    margin-top: 10px;
+      height: 50px;
+    }
+
+
+  
+  }
+
+  @media only screen and (max-width: 550px) {
+    #map iframe {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    #infor ul li a {
+      font-size: 9px;
+    text-align: center;
+    }
+    .full_noidung{
+      position: absolute;
+      background-image: none;
+      left: -5%;
+      right: -5%;
+      top: 0;
+      height: 10px;
+      
+    }
+    #gioithieu{
+      height: 50px;
+    }
+
+  }
+
+
+

@@ -11,11 +11,19 @@ class Found extends Component {
       setOpen: false,
     };
   }
+  // componentDidMount = async () => {
+  //   await Call_API(`buildfoudation`, "GET", null).then((item) => {
+  //     this.setState({
+  //       buildfoundation: item.data,
+  //     });
+  //   });
+  // };
   componentDidMount = async () => {
     await Call_API(`buildfoudation`, "GET", null).then((item) => {
-      this.setState({
-        buildfoundation: item.data,
-      });
+      !!item &&
+        this.setState({
+          buildfoundation: item.data,
+        });
     });
   };
 

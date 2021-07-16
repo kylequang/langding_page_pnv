@@ -10,13 +10,26 @@ class Value extends Component {
       setOpen: false,
     };
   }
+  // componentDidMount = async () => {
+  //   await Call_API(`mainvalue`, "GET", null).then((db) => {
+  //     !!db &&
+  //     this.setState({
+  //       mainvalue: db.data,
+  //     });
+  //   });
+  // };
+
   componentDidMount = async () => {
     await Call_API(`mainvalue`, "GET", null).then((db) => {
-      this.setState({
-        mainvalue: db.data,
-      });
+     
+        this.setState({
+          mainvalue: db.data,
+        });
     });
   };
+
+
+
   render() {
     return (
       <Container fluid className="values_containerfluid">

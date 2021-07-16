@@ -12,11 +12,11 @@ class IndexPartner extends Component {
       partners: [],
     };
   }
-  componentDidMount = async () => {
-    this.setState({
-      partners: await get_data("partners", this.state.partners),
-    });
-  };
+  // componentDidMount = async () => {
+  //   this.setState({
+  //     partners: await get_data("partners", this.state.partners),
+  //   });
+  // };
   render() {
     return (
       <Container>

@@ -18,6 +18,8 @@ class Index_ItNuoiIt extends Component {
   }
   async componentDidMount() {
     await Call_API(`ITnuoiIT`, "GET", null).then((res) => {
+      !!res&&
+
       this.setState(() => ({
         data: res.data,
       }));

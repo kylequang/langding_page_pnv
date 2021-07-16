@@ -4,7 +4,7 @@ import "../../App.css";
 class Slide extends Component {
     render() {
         return (
-            <div>
+            <div class="full_noidung">
                 <div id="noidung">
                     <marquee style={{ color: "black" }}>
                         {" "}

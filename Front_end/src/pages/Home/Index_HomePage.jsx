@@ -12,7 +12,6 @@ class Index_HomePage extends Component {
     return (
       <Container fluid>
         <Head></Head>
-
         <Found></Found>
         <Value></Value>
         <Counter></Counter>

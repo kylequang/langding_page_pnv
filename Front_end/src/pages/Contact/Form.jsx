@@ -1,56 +1,22 @@
 import React, { Component } from "react";
-import "../../App.css";
+import { Form, Button } from "react-bootstrap";
 
-class Form extends Component {
-    render() {
-        return (
-            <div>
-                <div id="nhap">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="form-group">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Name"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="form-group">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Email"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-md-12">
-                            <div className="form-group">
-                                <textarea
-                                    name
-                                    className="form-control"
-                                    id
-                                    cols={60}
-                                    rows={5}
-                                    placeholder="Message"
-                                    defaultValue={""}
-                                />
-                            </div>
-                        </div>
-                        <div className="col-md-12">
-                            <div className="form-group">
-                                <input
-                                    type="submit"
-                                    defaultValue="Send Message"
-                                    className="btn btn-primary"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+class Form_contact extends Component {
+  render() {
+    return (
+      <Form>
+        <h4>Đăng kí để cập nhật thông tin mới</h4>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="name@example.com" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Content</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+        <Button>Gửi</Button>
+      </Form>
+    );
+  }
 }
-export default Form;
+export default Form_contact;

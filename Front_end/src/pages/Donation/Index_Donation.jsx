@@ -1,45 +1,62 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import Donate from "./Donate";
 import DonateAmount from "./DonateAmount";
 import BasicInfo from "./BasicInfo";
 import Payment from "./Payment";
-import Processing from "./Process";
-import Confirm from "./Confirm";
-import Thank from "./Thank";
 import Images from "./Image";
+import DonateImg from "./DonateImg";
 import "./Donate.scss";
 
 class IndexDonation extends Component {
-    render() {
-        return (
-            <>
-                <Container fluid>
-                    <figure class="figure">
-                        <img src="images/" width="100%" />
-                        <figcaption class="figure-caption text-right">
-                            A caption for the above image.
-                        </figcaption>
-                    </figure>
-                </Container>
+  render() {
+    return (
+      <>
+        <Container fluid>
+          <Row className="slide">
+            <Image
+              src="images/Donate/donate_back.jpg"
+              className="img-responsive rounded modal-image donate-img"
+              width="100%"
+              height="40%"
+            />
+            <div className="text-img">
+              <h1>
+                Hãy <span>Donate</span> Để Chia Sẻ Yêu Thương
+              </h1>
+              <p>
+                Hình thức hỗ trợ có thể là những món quà vật chất. Hỗ trợ theo
+                hàng tháng hoặc một lần.
+              </p>
+            </div>
+          </Row>
+        </Container>
 
-                <Container fluid>
-                    <Images />
-                    <Row>
-                        <Col xs={6} md={5}>
+        <Container fluid>
+          <Images />
+          <Row>
+            <Col md={1}></Col>
+            <DonateImg />
+            {/* <Col xs={6} md={5}>
                             <Donate />
                             <DonateAmount />
-                        </Col>
-                        <BasicInfo />
-                        <Payment />
-                        <Processing />
-                        <Confirm />
-                        <Thank />
-                    </Row>
-                </Container>
-            </>
-        );
-    }
+                        </Col> */}
+            <BasicInfo />
+            <Payment />
+          </Row>
+          <Row>
+            <Col xs={5} md={5}></Col>
+            <Col xs={4} md={4}>
+              <Button variant="danger" className=" confirm">
+                CONFIRM
+              </Button>
+            </Col>
+            <Col xs={4} md={4}></Col>
+          </Row>
+        </Container>
+      </>
+    );
+  }
 }
 export default IndexDonation;

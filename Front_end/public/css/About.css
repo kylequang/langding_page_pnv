@@ -1,10 +1,12 @@
 /* Nền tảng xây dựng dự án */
 .container-found {
-  margin-top: 10px;
-  background-color: antiquewhite;
+  margin-top: 13px;
+  padding-bottom: 10px;
+  background-color: rgb(248, 242, 234);
 }
 .container-found h1 {
-  padding-top: 10px;
+  padding-top: 50px;
+  text-align: center;
 }
 .row {
   margin-bottom: 20px;
@@ -15,11 +17,12 @@
 }
 .content_found {
   margin-top: 10px;
-  /* margin-bottom: 3px; */
 }
 .sub_content_found span {
   color: #22bbea;
   padding: 10px;
+  font-size: 30px;
+  justify-content: center;
 }
 .sub_content_found p {
   font-size: 20px;
@@ -28,11 +31,11 @@
 
 /* Giá trị của PN */
 .values_containerfluid {
-  background-image: -ms-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+  background-image: -ms-linear-gradient(-90deg, #f3e2d3 0%, white 100%);
 }
 .values_container {
   margin-bottom: 4px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 .values_container h1 {
   padding-top: 20px;
@@ -58,14 +61,9 @@
 .values_container p i {
   padding-left: 5px;
 }
-.values_container span {
+/* .values_container span {
   font-size: 15px;
-  /* fas fa-heartbeat
- fas fa-universal-access
- fas fa-hand-holding-heart
- far fa-handshake
-fas fa-restroom */
-}
+} */
 
 /* Partner Đối tác */
 .img_partern {

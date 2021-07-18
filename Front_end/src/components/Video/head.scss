@@ -1,6 +1,26 @@
-@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import "node_modules/react-modal-video/scss/modal-video.scss";
 
+#slide {
+  height: 1000px;
+  width: 100%;
+  background-image: url("./slide.JPG");
+}
 .icon {
-    position: relative;
-    bottom :55em;
+  // padding: 2px 2px;
+  size: 100;
+  position: relative;
+  bottom: 0em;
+  top: 55em;
+  text-align: center;
+  margin-left: 45rem;
+  color: #ebdc0c;
+}
+
+#slide a :hover {
+  size: 100;
+  border-radius: 20px;
+  color: #fd6914;
+}
+#btn {
+  background-color: none;
 }

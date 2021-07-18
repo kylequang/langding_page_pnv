@@ -1,5 +1,9 @@
+#itnuoiit_background {
+  background-color: rgb(245, 241, 237);
+}
+
 .carousel-item {
-  background-color: white;
+  background-color: rgb(250, 243, 243);
   background-size: cover;
 }
 
@@ -49,7 +53,7 @@
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
-  margin-top: 10rem;
+  margin-top: 1rem;
   margin-bottom: 10rem;
   background-position: center;
   background-size: 100%;
@@ -372,6 +376,10 @@ h3 {
   }
 }
 @media (min-width: 1441px) {
+  .reason {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
   #introduce {
     width: 90rem;
     top: 12rem;

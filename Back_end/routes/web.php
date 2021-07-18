@@ -2,8 +2,14 @@
 
 // use App\Http\Controllers\GetData;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FirebaseController;
 use App\Http\Controllers\Admin\GetData;
 use App\Http\Controllers\Admin\PostData;
+
+
+
+Route::get('firebase',[FirebaseController::class,'index']);
+
 
 // Route::get('/{path?}' , function () {
 //     return view('admin.index');

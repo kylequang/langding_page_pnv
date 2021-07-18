@@ -18,11 +18,11 @@ class Payment extends Component {
                             <Tab eventKey="card" title="CARD">
                                 <Card />
                             </Tab>
-                            <Tab eventKey="paypal" title="PAYPAL">
+                            <Tab eventKey="paypal" title="BANK">
                                 <PayPal />
                             </Tab>
                         </Tabs>
-                        <DonateButton title="Confirm" />
+                        {/* <DonateButton title="Confirm" /> */}
                     </div>
                 </section>
             </Col>

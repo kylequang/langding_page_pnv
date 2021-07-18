@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Spinner, Row, Col } from "react-bootstrap";
+import { Container, Spinner, Row, Col, Image } from "react-bootstrap";
 import Call_API from "../../services/CallAPI";
 import Slide from "./Slide";
 import Reason from "./Reason.jsx";
@@ -27,7 +27,7 @@ class Index_ItNuoiIt extends Component {
     console.log(this.state.data);
     if (this.state.data !== null) {
       return (
-        <Container fluid>
+        <Container fluid id="itnuoiit_background">
           <Slide />
           <Container className="container-itnuoiit" fluid>
             {this.state.data.slice().map((elm, index) => {
@@ -39,6 +39,7 @@ class Index_ItNuoiIt extends Component {
                 );
               }
             })}
+
             <Container className="covid" fluid>
               <Covid />
             </Container>
@@ -68,6 +69,9 @@ class Index_ItNuoiIt extends Component {
             </Container>
             <Container className="form" fluid>
               <FormDonate />
+            </Container>
+            <Container className="epilogue">
+              <Image className="d-block w-100" src="images/ItnuoiIt/17.jpg" />
             </Container>
           </Container>
         </Container>

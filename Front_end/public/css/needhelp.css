@@ -1,4 +1,7 @@
 .needhelp_container {
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: rgb(253, 250, 250);
   display: block;
   overflow: hidden;
   /* padding: 60px 0; */
@@ -115,4 +118,23 @@
 
 .needhelp_container .people_img {
   padding-top: 100px;
+  /* background-image: url("../images/imgneedhelp.PNG"); */
+}
+
+#icon_need_play {
+  color: yellow;
+  padding: 2px 2px;
+  position: relative;
+  top: -5em;
+  left: 15em;
+}
+#icon_need_play:hover {
+  color: red;
+  border-radius: 15px;
+}
+.redirect {
+  text-decoration: none;
+}
+.redirect h4:hover {
+  color: #fd7611;
 }

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./head.scss";
 import ModalVideo from "react-modal-video";
-import slide from "./teacher.jpg";
+
 import { PlayBtn } from "react-bootstrap-icons";
-import { Container, Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 class Head extends Component {
   constructor() {
     super();
@@ -17,16 +17,16 @@ class Head extends Component {
   }
   render() {
     return (
-      <Container fluid style={{ backgroundImage: "url({slide})" }}>
-        <Image src={slide} height="900px" width="100%" />
+      <Container fluid id="slide">
         <ModalVideo
           channel="youtube"
           isOpen={this.state.isOpen}
           videoId="gkLdO8I76LI"
           onClose={() => this.setState({ isOpen: false })}
         />
+
         <a onClick={this.openModal}>
-          <PlayBtn className="icon" color="royalblue" size={100} />
+          <PlayBtn className="icon" size={70} />
         </a>
       </Container>
     );

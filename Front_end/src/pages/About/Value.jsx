@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import Call_API from "../../services/CallAPI";
-import { Container, Row, Col, Button, Collapse } from "react-bootstrap";
+import {
+  Container,
+  Collapse,
+  Row,
+  Col,
+  Button,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
 class Value extends Component {
   constructor(props) {
     super(props);
@@ -12,11 +20,14 @@ class Value extends Component {
   }
   componentDidMount = async () => {
     await Call_API(`mainvalue`, "GET", null).then((db) => {
-      this.setState({
-        mainvalue: db.data,
-      });
+      if (db.data) {
+        this.setState({
+          mainvalue: db.data,
+        });
+      }
     });
   };
+
   render() {
     return (
       <Container fluid className="values_containerfluid">
@@ -27,18 +38,25 @@ class Value extends Component {
               return (
                 <Col>
                   <i className={item.icon} />
-                  <p>{item.name_value}</p>
-                  <Collapse in={this.state.open}>
-                    <div id="value">
-                      <span>{item.descriptions}</span>
-                    </div>
-                  </Collapse>
+
+                  <OverlayTrigger
+                    // key={item}
+                    // item={item}
+                    placement="bottom"
+                    overlay={
+                      <Tooltip id={`tooltip-${item}`}>
+                        <strong>{item.descriptions}</strong>.
+                      </Tooltip>
+                    }
+                  >
+                    <p>{item.name_value}</p>
+                  </OverlayTrigger>
                 </Col>
               );
             })}
           </Row>
 
-          <Button
+          {/* <Button
             onClick={() =>
               this.setState({
                 open: !this.state.open,
@@ -49,7 +67,7 @@ class Value extends Component {
             style={{ marginBottom: "20px" }}
           >
             <i class="fas fa-arrow-circle-down"></i>
-          </Button>
+          </Button> */}
         </Container>
       </Container>
     );

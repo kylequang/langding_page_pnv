@@ -33,16 +33,19 @@ class Counter extends Component {
               </h2>
             </Col>
 
-            <div className="col-12">
+            <Container className="col-12">
               <div className="wath_video">
                 <a className="popup-youtube">
                   <i className="flaticon-play-button" />
                 </a>
               </div>
-            </div>
+            </Container>
           </Row>
         </Container>
-        <Share></Share>
+
+        <Container>
+          <Share></Share>
+        </Container>
       </Container>
     );
   }

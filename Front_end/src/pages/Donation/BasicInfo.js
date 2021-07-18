@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Form } from 'react-bootstrap';
+import { Col, Form, Button } from 'react-bootstrap';
 import DonateButton from '../../components/Buttons/Donation';
 class BasicInfo extends Component {
     render() {
@@ -39,9 +39,9 @@ class BasicInfo extends Component {
                                 <input type="text" />
                             </div>
                         </Form>
-                        <DonateButton title="Next" />
                     </div>
                 </section>
+                
             </Col>
         )
     }

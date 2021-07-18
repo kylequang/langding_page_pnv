@@ -14,15 +14,24 @@
 /* Css Header main */
 .navigation_header {
   margin-top: -20px;
+  background-color: #eaeff5;
 }
+.divheader {
+  text-decoration: none;
+  padding-right: 20px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
 .navigation_header span {
   color: black;
-  text-decoration: none;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
 }
 .navigation_header span:hover {
   color: #22bbea;
+  font-size: 23px;
 }
-
 #logo {
-  height: 40px;
+  height: 50px;
 }

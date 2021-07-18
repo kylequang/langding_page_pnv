@@ -14,7 +14,7 @@ import Index_About from './pages/About/Index_About';
 import Index_Blog from "./pages/Blog/Index_Blog";
 import Index_Contact from "./pages/Contact/Index_Contact";
 import Header from './components/Header';
-import Footer from './components/Footer';
+
 function App() {
   return (
     <Router>
@@ -29,7 +29,6 @@ function App() {
           <Route path="/contact" exact component={Index_Contact} />
         </Switch>
       </Container>
-      <Footer></Footer>
     </Router>
   );
 }

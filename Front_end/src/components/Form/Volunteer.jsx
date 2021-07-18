@@ -8,15 +8,21 @@ class Volunteer extends Component {
         <Container>
           <Row className="volunter_row">
             <Col sm={9} md={9} lg={9}>
-              <h2>ĐĂNG KÍ TÌNH NGUYỆN VIÊN</h2>
+              <h2>ĐĂNG KÍ TUYỂN SINH</h2>
               <input
                 type="email"
                 name="email_voulunteer"
                 placeholder="example@gmail.com"
               ></input>
+
+              <input
+                type="text"
+                name="email_voulunteer"
+                placeholder="example name"
+              ></input>
             </Col>
             <Col sm={3} md={3} lg={3}>
-              <SignUp></SignUp>
+              {/* <SignUp></SignUp> */}
             </Col>
           </Row>
         </Container>

@@ -7,8 +7,8 @@ class Header extends Component {
     return (
       <Container fluid>
         <Header_Top></Header_Top>
-
-        <Navbar className="navigation_header" bg="light" expand="lg">
+        {/* bg="light" */}
+        <Navbar className="navigation_header" expand="lg">
           <Navbar.Brand>
             <Image id="logo" src="images/logo_homepage.png" />
             <i class="fas fa-globe"></i>
@@ -20,44 +20,30 @@ class Header extends Component {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="/">
-                <Link to="/">
-                  <span>Home</span>
-                </Link>
+              <Nav.Link href="/" className="divheader">
+                <span>Home</span>
               </Nav.Link>
-              <Nav.Link>
-                <Link to="/about">
-                  <span>About Us</span>
-                </Link>
+              <Nav.Link href="about" className="divheader">
+                <span>About</span>
               </Nav.Link>
-              <NavDropdown title="Blogs" id="navbarScrollingDropdown">
-                <NavDropdown.Item>
-                  <span>Sharing</span>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <span>Events</span>
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link>
-                <Link to="/itnuoiit">
-                  <span>ItNuoiIt</span>
-                </Link>
+              <Nav.Link href="blog" className="divheader">
+                <span>News</span>
               </Nav.Link>
-
-              <Nav.Link>
-                <Link to="/donate">
-                  <span>Activity</span>
-                </Link>
+              <Nav.Link href="itnuoiit" className="divheader">
+                <span>
+                  <strong>ItNuoiIt</strong>
+                </span>
               </Nav.Link>
-              <Nav.Link>
-                <Link to="/donate">
-                  <span>Donation</span>
-                </Link>
+              <Nav.Link href="activity" className="divheader">
+                <span>Activity</span>
               </Nav.Link>
-              <Nav.Link>
-                <Link to="/contact">
-                  <span>Contact</span>
-                </Link>
+              <Nav.Link href="donate" className="divheader">
+                <span>
+                  <strong>Donation</strong>
+                </span>
+              </Nav.Link>
+              <Nav.Link href="contact" className="divheader">
+                <span>Contact</span>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

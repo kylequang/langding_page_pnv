@@ -9,7 +9,7 @@ class PayPal extends Component {
                 <input type="hidden" name="cmd" defaultValue="_xclick" />
                 <input type="hidden" name="business" defaultValue="accounts@freelanceswitch.com" />
                 
-                <strong>How much do you want to donate?</strong><br />
+                {/* <strong>How much do you want to donate?</strong><br />
                 $ <input type="text" name="amount" />
                 <input type="hidden" name="no_shipping" defaultValue={0} />
                 <input type="hidden" name="no_note" defaultValue={1} />
@@ -18,7 +18,7 @@ class PayPal extends Component {
                 <input type="hidden" name="bn" defaultValue="PP-BuyNowBF" />
                 <input type="hidden" name="return" defaultValue="https://net.tutsplus.com/payment-complete/" />
                 <br /><br />
-                <input type="submit" defaultValue="Pay with PayPal!" />
+                <input type="submit" defaultValue="Pay with PayPal!" /> */}
                 </Form>
             </>
         )

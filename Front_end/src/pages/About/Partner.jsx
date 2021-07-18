@@ -19,9 +19,16 @@ class IndexPartner extends Component {
   };
   render() {
     return (
-      <Container>
+      <Container fluid id="patner">
+        <h2>Đối Tác Của Chúng Tôi</h2>
         {this.state.partners.length && (
-          <OwlCarousel className="owl-theme" loop items={4} margin={10}>
+          <OwlCarousel
+            className="owl-theme"
+            loop
+            autoPlay
+            items={6}
+            margin={10}
+          >
             {this.state.partners.map((partner) => {
               return (
                 <div class="item">

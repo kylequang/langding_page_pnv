@@ -1,5 +1,5 @@
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+  <nav style='background-color: rgb(163, 147, 147)' class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -10,7 +10,7 @@
         <a class="navbar-brand" href="#">Passerellesnumeriques Viet Nam</a>
     </div>
     <!-- /.navbar-header -->
-    <ul class="nav navbar-top-links navbar-right">
+    <ul class="nav navbar-top-links navbar-right" style={{}}>
         <!-- /.dropdown -->
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">

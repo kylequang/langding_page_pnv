@@ -1,14 +1,25 @@
 import React, { Component } from "react";
-
 import { Container, Row, Col } from "react-bootstrap";
+import ModalVideo from "react-modal-video";
 
+import { PlayBtn } from "react-bootstrap-icons";
 class Need_Help extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isOpen: false,
+    };
+    this.openModal = this.openModal.bind(this);
+  }
+  openModal() {
+    this.setState({ isOpen: true });
+  }
   render() {
     return (
       <Container fluid className="needhelp_container">
         <Container>
           <Row>
-            <Col sm={6} md={6} lg={6} className="needhelp_content">
+            <Col className="needhelp_content">
               <h4>
                 LÁ LÀNH ĐÙM LÁ RÁCH <i class="fas fa-hands-helping"></i>
               </h4>
@@ -37,13 +48,19 @@ class Need_Help extends Component {
                     </a>
                     .
                   </p>
+                  <a className="redirect" href="donate">
+                    <h4> Donate Now !!!</h4>{" "}
+                  </a>
+                  <a className="redirect" href="itnuoiit">
+                    <h4>Tham gia ITNUOIIT cùng chúng tôi !!!</h4>
+                  </a>
                   <br></br>
                 </Col>
               </Row>
             </Col>
 
-            <Col sm={6} md={6} lg={6} className="people_img">
-              <iframe
+            <Col className="people_img">
+              {/* <iframe
                 width="700"
                 height="530"
                 src="https://www.youtube.com/embed/olcVx8xnwWQ?controls=1"
@@ -51,7 +68,21 @@ class Need_Help extends Component {
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-              ></iframe>
+              ></iframe> */}
+              <img
+                height="500px"
+                width="100%"
+                src="./images/imgneedhelp.PNG"
+              ></img>
+              <ModalVideo
+                channel="youtube"
+                isOpen={this.state.isOpen}
+                videoId="olcVx8xnwWQ"
+                onClose={() => this.setState({ isOpen: false })}
+              />
+              <a onClick={this.openModal}>
+                <PlayBtn id="icon_need_play" size={70} />
+              </a>
             </Col>
           </Row>
         </Container>

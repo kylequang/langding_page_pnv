@@ -1,0 +1,107 @@
+#footer {
+  background-color: #222;
+}
+
+#footer img {
+  width: 120px;
+  border-radius: 100px;
+}
+#footer img:hover {
+  width: 130px;
+  border-radius: 100px;
+}
+#lienket h2 {
+  color: #22adb6;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#lienket h2:hover {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#lienket h4 {
+  color: orange;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#lienket i {
+  background-color: white;
+  width: 30px;
+  border-radius: 5px;
+}
+#lienket i:hover {
+  background-color: rgb(235, 214, 214);
+  width: 35px;
+  border-radius: 8px;
+}
+#themfooter h3 {
+  color: #22adb6;
+  margin-bottom: 20px;
+}
+#themfooter h3:hover {
+  color: white;
+  margin-bottom: 20px;
+}
+#themfooter h4 {
+  color: white;
+  margin-bottom: 20px;
+}
+#themfooter h4:hover {
+  color: orange;
+  margin-bottom: 20px;
+}
+#sanxuat h4 {
+  font-weight: bold;
+  margin-top: 20px;
+  font-style: italic;
+  -webkit-animation: my 700ms infinite;
+  -moz-animation: my 700ms infinite;
+  -o-animation: my 700ms infinite;
+  animation: my 700ms infinite;
+}
+
+@-webkit-keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #f8cd0a;
+  }
+}
+@-moz-keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #f8cd0a;
+  }
+}
+@-o-keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #f8cd0a;
+  }
+}
+@keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #f8cd0a;
+  }
+}

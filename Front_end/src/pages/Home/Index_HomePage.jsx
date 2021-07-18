@@ -29,9 +29,7 @@ class Index_HomePage extends Component {
         <Value></Value>
         <Counter></Counter>
         <Need_help></Need_help>
-
         <Partner></Partner>
-
         <Container fluid style={{ textAlign: "center" }}>
           <h1 style={{ textAlign: "center" }}>
             Quy Trình Tuyển Sinh Của Chúng Tôi

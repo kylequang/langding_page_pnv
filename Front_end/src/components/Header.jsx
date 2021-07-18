@@ -23,9 +23,7 @@ class Header extends Component {
               <Nav.Link href="/" className="divheader">
                 <span>Home</span>
               </Nav.Link>
-              <Nav.Link href="about" className="divheader">
-                <span>About</span>
-              </Nav.Link>
+
               <Nav.Link href="blog" className="divheader">
                 <span>News</span>
               </Nav.Link>
@@ -34,9 +32,7 @@ class Header extends Component {
                   <strong>ItNuoiIt</strong>
                 </span>
               </Nav.Link>
-              <Nav.Link href="activity" className="divheader">
-                <span>Activity</span>
-              </Nav.Link>
+
               <Nav.Link href="donate" className="divheader">
                 <span>
                   <strong>Donation</strong>

@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Mainvalue extends Model
 {
     use HasFactory;
-    protected $table='main_value';
+    protected $table='mainvalue';
     protected $fillable = [
-        'id_pn','name_value', 'description','icon'
+        'name_value', 'descriptions','icon'
     ];
 }

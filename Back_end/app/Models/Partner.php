@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Partner extends Model
 {
     use HasFactory;
-    protected $table='patrner';
+    protected $table='patner';
     protected $fillable = [
        'name','img', 'description'
     ];

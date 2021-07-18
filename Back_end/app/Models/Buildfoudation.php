@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Buildfoudation extends Model
 {
     use HasFactory;
-    protected $table='build_foundation';
+    protected $table='buildfoundation';
     protected $fillable=[
-        'id_PN','nameofBuild','descriptions'
+      'nameofbuild','descriptions','icon'
     ];
 }

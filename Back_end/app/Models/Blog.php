@@ -10,6 +10,8 @@ class Blog extends Model
     use HasFactory;
     protected $table='blog_content';
     protected $fillable=[
-        'id_blogs','tittle','contents_main','image_main'
-    ];
+      'type_blog',
+       'content',
+      'img',
+        'descriptions',
 }

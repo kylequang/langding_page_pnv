@@ -17,6 +17,7 @@ class IndexPartner extends Component {
       partners: await get_data("partners", this.state.partners),
     });
   };
+
   render() {
     return (
       <Container fluid id="patner">

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Buildfoundation extends Migration
+class Admin extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class Buildfoundation extends Migration
      */
     public function up()
     {
-        Schema::create('buildfoundation', function (Blueprint $table) {
+        Schema::create('admin', function (Blueprint $table) {
             $table->id();
-            $table->string('nameofbuild');
-          $table->string('descriptions');
-          $table->string('icon');
-           
+            $table->string('name');
+            $table->string('email');
+            $table->string('password');
+            $table->integer('role');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class Buildfoundation extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('buildfoundation');
+        Schema::dropIfExists('admin');
     }
 }

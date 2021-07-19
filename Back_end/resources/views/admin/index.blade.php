@@ -35,6 +35,6 @@
 	<div id="wrapper">	 
 		@include('admin.header');
 		@yield('content')
-	</div>x
+	</div>
 </body>
 @include('admin.script')

@@ -1,15 +1,13 @@
 <?php
 
 // use App\Http\Controllers\GetData;
+
+use App\Http\Controllers\Admin\Admincontroller;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FirebaseController;
+
 use App\Http\Controllers\Admin\GetData;
 use App\Http\Controllers\Admin\PostData;
-
-
-
-Route::get('firebase',[FirebaseController::class,'index']);
-
+use App\Http\Middleware\Adminlogin;
 
 // Route::get('/{path?}' , function () {
 //     return view('admin.index');
@@ -19,11 +17,20 @@ Route::get('firebase',[FirebaseController::class,'index']);
 // Route::get('/' , function () {
 //     return view('admin.homepage');
 // })->name('home');
-Route::get('/', [GetData::class,'getdata_home']);
-// Route::get('/',[GetData::class,'getdata_home']);
 
-//Route blog
-Route::get('/blog_event',function(){
-    return view('admin.event');
+//form login
+Route::get('/login',function(){
+    return view('admin.login');
+})->name('getlogin');
+
+Route::post('login',[Admincontroller::class,'postlogin'])->name('login');
+
+// Route::get('/', [GetData::class,'getdata_home'])->middleware(Adminlogin::class);
+// Route::get('/',[GetData::class,'getdata_home']);
+Route::group(['middleware' => Adminlogin::class], function() { 
+    Route::get('/', [GetData::class,'getdata_home'])->name('homeadmin');
+    Route::get('/logout',[Admincontroller::class,'getLogout'])->name('logout');
+    Route::get('liststaff',function(){
+        return view('admin.liststaff');
+    });
 });
-Route::post('post_event',[PostData::class,'post_event'])->name('post_event');

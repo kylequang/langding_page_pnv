@@ -29,7 +29,48 @@
   color: black;
 }
 
+@media only screen and (max-width: 1366px) {
+  .container-found h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 45px;
+  }
+  .sub_content_found span {
+    color: #22bbea;
+    padding: 5px;
+    font-size: 30px;
+    justify-content: center;
+  }
+  .sub_content_found p {
+    font-size: 15px;
+    color: black;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .container-found h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .sub_content_found {
+    text-align: center;
+  }
+  .sub_content_found span {
+    color: #22bbea;
+    padding: 5px;
+    font-size: 20px;
+    text-align: justify;
+    /* justify-content: ; */
+  }
+  .sub_content_found p {
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+  }
+}
+
 /* Giá trị của PN */
+
 .values_containerfluid {
   background-image: -ms-linear-gradient(-90deg, #f3e2d3 0%, white 100%);
 }
@@ -39,7 +80,6 @@
 }
 .values_container h1 {
   padding-top: 20px;
-
   text-align: center;
   color: #22bbea;
 }
@@ -49,9 +89,6 @@
   font-size: 25px;
 }
 
-/* .row_value {
-  text-align: left;
-} */
 .row_value i {
   margin-left: 50px;
 }
@@ -61,9 +98,37 @@
 .values_container p i {
   padding-left: 5px;
 }
-/* .values_container span {
-  font-size: 15px;
-} */
+/* Giá trị của PN */
+@media only screen and (max-width: 1366px) {
+  .values_container {
+    text-align: center;
+  }
+  .values_container h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 45px;
+    color: #22bbea;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .values_container {
+    text-align: center;
+  }
+  .values_container h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #22bbea;
+  }
+
+  .row_value i {
+    background-color: #dd6f0f;
+    margin-left: 0px;
+  }
+  .values_container p {
+    font-size: 20px;
+  }
+}
 
 /* Partner Đối tác */
 .img_partern {

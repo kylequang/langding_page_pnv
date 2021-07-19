@@ -16,7 +16,7 @@
   font: 700 24px/38px "Comfortaa", cursive;
 
   color: #22bbea;
-  padding: 20px 0 15px;
+  padding: 20px 0 0px;
   /* max-width: 315px; */
 }
 
@@ -48,7 +48,7 @@
 
 .needhelp_container .needhelp_content .needhelp_subcontent p {
   font-size: 20px;
-  color: rgba(1, 1, 1, 0.702);
+  color: rgba(0, 0, 0, 0.702);
   padding-top: 10px;
   /* max-width: 400px; */
 }
@@ -137,4 +137,71 @@
 }
 .redirect h4:hover {
   color: #fd7611;
+}
+.img_needhelp {
+  height: 500px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1336px) {
+  .needhelp_container .needhelp_content h4 {
+    text-align: center;
+    font: 700 24px/38px "Comfortaa", cursive;
+    color: #22bbea;
+    padding: 20px 0 15px;
+    font-size: 30px;
+  }
+  .needhelp_container .needhelp_content h2 {
+    text-align: left;
+    font: 700 25px/30px "Comfortaa", cursive;
+    color: #fd7611;
+    position: relative;
+  }
+
+  .needhelp_container .needhelp_content h2:after {
+    content: "";
+    text-align: left;
+    position: absolute;
+    height: 4px;
+    width: 58px;
+    background: #fd7611;
+  }
+  .needhelp_container .needhelp_content p {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 1px;
+    max-width: 620px;
+  }
+  .needhelp_container .needhelp_content .needhelp_subcontent p {
+    font-size: 20px;
+    color: rgba(1, 1, 1, 0.702);
+    padding-top: 5px;
+    /* max-width: 400px; */
+  }
+  .needhelp_container .needhelp_content .needhelp_subcontent p:first-child {
+    padding-top: 10px;
+  }
+  .needhelp_container .needhelp_content .needhelp_subcontent p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+  }
+  .img_needhelp {
+    height: 400px;
+    width: 100%;
+  }
+  #icon_need_play {
+    color: yellow;
+    padding: 2px 2px;
+    position: relative;
+    top: -5em;
+    left: 11rem;
+  }
+  .people_img h4 {
+    text-align: center;
+    font: 700 24px/38px "Comfortaa", cursive;
+    color: #22bbea;
+    padding: 10px;
+    font-size: 25px;
+  }
 }

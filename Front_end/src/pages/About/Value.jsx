@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import Call_API from "../../services/CallAPI";
-import {
-  Container,
-  Collapse,
-  Row,
-  Col,
-  Button,
-  OverlayTrigger,
-  Tooltip,
-} from "react-bootstrap";
+import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 class Value extends Component {
   constructor(props) {
     super(props);
@@ -36,12 +28,11 @@ class Value extends Component {
           <Row className="row_value">
             {this.state.mainvalue.map((item) => {
               return (
-                <Col>
-                  <i className={item.icon} />
-
+                <Col class="col_values">
+                  <span>
+                    <i className={item.icon} />
+                  </span>
                   <OverlayTrigger
-                    // key={item}
-                    // item={item}
                     placement="bottom"
                     overlay={
                       <Tooltip id={`tooltip-${item}`}>
@@ -55,19 +46,6 @@ class Value extends Component {
               );
             })}
           </Row>
-
-          {/* <Button
-            onClick={() =>
-              this.setState({
-                open: !this.state.open,
-              })
-            }
-            aria-controls="value"
-            aria-expanded={this.state.open}
-            style={{ marginBottom: "20px" }}
-          >
-            <i class="fas fa-arrow-circle-down"></i>
-          </Button> */}
         </Container>
       </Container>
     );

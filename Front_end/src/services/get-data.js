@@ -5,5 +5,4 @@ var get_data = async ($endpoint, $array) => {
     });
     return $array;
 }
-
 export default get_data;

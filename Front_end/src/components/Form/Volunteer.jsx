@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import SignUp from "../Buttons/SignUp";
+
 class Volunteer extends Component {
   render() {
     return (

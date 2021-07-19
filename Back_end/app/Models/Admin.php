@@ -4,14 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
-class Blog extends Model
+use Illuminate\Foundation\Auth\User as admins;
+class Admin extends admins
 {
     use HasFactory;
-    protected $table='blog_content';
+    protected $table='admin';
     protected $fillable=[
-      'type_blog',
-       'content',
-      'img',
-        'descriptions'];
+      'name',
+      'email',
+      'password',
+      'role'
+    ];
 }

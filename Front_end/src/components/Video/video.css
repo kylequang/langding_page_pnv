@@ -1,0 +1,12 @@
+@media only screen and (max-width: 736px) {
+  .intro {
+    margin-top: 20px;
+    color: #22bbea;
+  }
+  .intro h1 {
+    font-size: 25px;
+  }
+  #tuyensinh {
+    width: 100%;
+  }
+}

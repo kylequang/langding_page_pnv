@@ -106,3 +106,50 @@
 .ca_3 .wath_video .popup-youtube {
   background: #22bbea;
 }
+
+#video10nam {
+  width: 1200px;
+  height: 670px;
+}
+@media only screen and (max-width: 1366px) {
+  .countarup_area h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 45px;
+    color: #22bbea;
+  }
+  .countarup_area .counter_item h4 {
+    font: 100 15px/1 "Muli", sans-serif;
+    color: #272626;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  #video10nam {
+    width: 1000px;
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .countarup_area {
+    padding-top: 0px;
+  }
+  .countarup_area h1 {
+    padding-top: 30px;
+    text-align: justify;
+    font-size: 25px;
+    color: #22bbea;
+  }
+  .countarup_area .counter_item h4 {
+    font: 100 15px/1 "Muli", sans-serif;
+    color: #272626;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  #video10nam {
+    width: 100%;
+    height: 250px;
+  }
+} ;

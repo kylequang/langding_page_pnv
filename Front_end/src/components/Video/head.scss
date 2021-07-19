@@ -24,3 +24,39 @@
 #btn {
   background-color: none;
 }
+
+@media only screen and (max-width: 1366px) {
+  #slide {
+    height: 600px;
+    width: 100%;
+    background-image: url("./slide.JPG");
+  }
+  .icon {
+    // padding: 2px 2px;
+    size: 100;
+    position: relative;
+    bottom: 0em;
+    top: 32em;
+    text-align: center;
+    margin-left: 26rem;
+    color: #ebdc0c;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  #slide {
+    margin-top: 1px;
+    width: 105px;
+    height: 200px;
+    width: 100%;
+    background-image: url("https://i.ibb.co/Yb96qkm/IMG-1184.jpg");
+  }
+  .icon {
+    position: relative;
+    bottom: 0em;
+    top: 8em;
+    text-align: center;
+    margin-left: 7rem;
+    color: #ebdc0c;
+  }
+}

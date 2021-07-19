@@ -4,8 +4,7 @@ class Share extends Component {
   render() {
     return (
       <iframe
-        width="1120"
-        height="670"
+        id="video10nam"
         src="https://www.youtube.com/embed/eh97v0k0poI"
         title="YouTube video player"
         frameborder="0"

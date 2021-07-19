@@ -29,6 +29,6 @@ class Patner extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('post');
+        Schema::dropIfExists('patner');
     }
 }

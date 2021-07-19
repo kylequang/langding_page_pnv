@@ -31,6 +31,6 @@ class Staff extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('post');
+        Schema::dropIfExists('staff');
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row } from "react-bootstrap";
 import "./header.css";
-class Header_Top extends Component {
+class HeaderTop extends Component {
   render() {
     return (
       <Container fluid className="header-top">
@@ -18,4 +18,4 @@ class Header_Top extends Component {
   }
 }
 
-export default Header_Top;
+export default HeaderTop;

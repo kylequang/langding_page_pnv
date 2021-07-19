@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Admin;
 use App\Models\Buildfoudation;
 use App\Models\Devmilestone;
 use App\Models\Mainvalue;
@@ -203,7 +204,7 @@ class DatabaseSeeder extends Seeder
         $foundations=[
             [
             'nameofbuild'=>'Tầm nhìn',
-            'descriptions'=>'Passerelles numériques đấu tranh cho một thế giới mà những thiếu niên kém may mắn \r\ncó thể bộc lộ được tài năng và ý chí đặt được một cuộc sống tốt hơn nhờ vào giáo dục,\r\n đào tạo. ',
+            'descriptions'=>'PNV đấu tranh cho một thế giới mà những thiếu niên kém may mắn có thể bộc lộ được tài năng và ý chí đặt được một cuộc sống tốt hơn nhờ vào giáo dục, đào tạo. ',
             'icon'=>'fas fa-glasses',
             ],
             [
@@ -213,7 +214,7 @@ class DatabaseSeeder extends Seeder
              ],
             [
                 'nameofbuild'=>'Sứ Mệnh',
-                'descriptions'=>'Sứ mệnh của chúng tôi là tạo điều kiện cho các thanh niên có hoàn cảnhkhó khăn được học hành, được đào tạo chuyên môn và đào tạo kĩ năng trong lĩnh vực kĩ thuật số.',
+                'descriptions'=>'Sứ mệnh của chúng tôi là tạo điều kiện cho các thanh niên có hoàn cảnh khó khăn được học hành, được đào tạo chuyên môn và đào tạo kĩ năng trong lĩnh vực kĩ thuật số.',
                 'icon'=>'fas fa-american-sign-language-interpreting',
             ],
 
@@ -314,5 +315,37 @@ class DatabaseSeeder extends Seeder
         }    
 
 
+        $admins=[
+            [
+                'name'=>'tranthimyngoc',
+                'email'=>'',
+                'password'=>bcrypt('123'),
+                'role'=>1
+            ],
+            [
+                'name'=>'dangnguyenuyenphuong',
+                'email'=>'',
+                'password'=>bcrypt('123'),
+                'role'=>1
+            ],
+            [
+                'name'=>'kylequang',
+                'email'=>'ky.le22@student.passerellesnumeriques.org',
+                'password'=>bcrypt('123'),
+                'role'=>1
+            ],
+            [
+                'name'=>'admin',
+                'email'=>'admin@gmail.com',
+                'password'=>bcrypt('123'),
+                'role'=>1
+            ],
+        ];
+        try {
+            foreach ($admins as $item) {
+                Admin::create($item);
+            }
+        } catch (\Throwable $th) {
+        }    
     }
 }

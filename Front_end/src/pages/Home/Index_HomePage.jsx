@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { BoxLoading, CommonLoading, EatLoading } from "react-loading";
 import Found from "../About/Found";
-import Need_help from "../About/Need_Help";
+import NeedHelp from "../About/NeedHelp";
 import Value from "../About/Value";
 import Intro from "../../components/Video/Intro";
 import Counter from "../About/Counter";
@@ -28,12 +27,9 @@ class Index_HomePage extends Component {
         <Found></Found>
         <Value></Value>
         <Counter></Counter>
-        <Need_help></Need_help>
+        <NeedHelp></NeedHelp>
         <Partner></Partner>
         <Container fluid style={{ textAlign: "center" }}>
-          <h1 style={{ textAlign: "center" }}>
-            Quy Trình Tuyển Sinh Của Chúng Tôi
-          </h1>
           <Intro></Intro>
         </Container>
         <Volunteer></Volunteer>

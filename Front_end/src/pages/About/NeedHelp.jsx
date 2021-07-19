@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ModalVideo from "react-modal-video";
 
 import { PlayBtn } from "react-bootstrap-icons";
-class Need_Help extends Component {
+class NeedHelp extends Component {
   constructor() {
     super();
     this.state = {
@@ -19,7 +19,7 @@ class Need_Help extends Component {
       <Container fluid className="needhelp_container">
         <Container>
           <Row>
-            <Col className="needhelp_content">
+            <Col sm={12} md={12} lg={6} className="needhelp_content">
               <h4>
                 LÁ LÀNH ĐÙM LÁ RÁCH <i class="fas fa-hands-helping"></i>
               </h4>
@@ -29,6 +29,7 @@ class Need_Help extends Component {
                 Nhờ vào những tài trợ của các bạn, chúng tôi có thể duy trì hoạt
                 động của tổ chức và đóng góp nhiều lợi ích hơn cho cộng đồng..
               </p>
+
               <Row className="needhelp_subcontent">
                 <Col>
                   <p>
@@ -48,32 +49,19 @@ class Need_Help extends Component {
                     </a>
                     .
                   </p>
-                  <a className="redirect" href="donate">
+                  {/* <a className="redirect" href="donate">
                     <h4> Donate Now !!!</h4>{" "}
                   </a>
                   <a className="redirect" href="itnuoiit">
                     <h4>Tham gia ITNUOIIT cùng chúng tôi !!!</h4>
-                  </a>
+                  </a> */}
                   <br></br>
                 </Col>
               </Row>
             </Col>
 
             <Col className="people_img">
-              {/* <iframe
-                width="700"
-                height="530"
-                src="https://www.youtube.com/embed/olcVx8xnwWQ?controls=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe> */}
-              <img
-                height="500px"
-                width="100%"
-                src="./images/imgneedhelp.PNG"
-              ></img>
+              <img class="img_needhelp" src="./images/imgneedhelp.PNG"></img>
               <ModalVideo
                 channel="youtube"
                 isOpen={this.state.isOpen}
@@ -83,6 +71,12 @@ class Need_Help extends Component {
               <a onClick={this.openModal}>
                 <PlayBtn id="icon_need_play" size={70} />
               </a>
+              <a className="redirect" href="donate">
+                <h4> Donate Now !!!</h4>{" "}
+              </a>
+              <a className="redirect" href="itnuoiit">
+                <h4>Tham gia ITNUOIIT cùng chúng tôi !!!</h4>
+              </a>
             </Col>
           </Row>
         </Container>
@@ -91,4 +85,4 @@ class Need_Help extends Component {
   }
 }
 
-export default Need_Help;
+export default NeedHelp;

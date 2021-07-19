@@ -68,13 +68,13 @@
                     <!-- /input-group -->
                 </li>
                 <li>
-                    <a href=""><i class="fas fa-home"></i> Home Page <i class="fas fa-spinner"></i></a>
+                    <a href="/"><i class="fas fa-home"></i> Home Page <i class="fas fa-spinner"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-users"></i> Staff Management <span class="fa arrow"></span></a>
+                    <a href="liststaff"><i class="fas fa-users"></i> Staff Management <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#"> <i class="fas fa-list"></i> <span>List Staff<span></a>
+                            <a href="liststaff"> <i class="fas fa-list"></i> <span>List Staff<span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-user-plus"></i> <span>Add Staff</span> </a>

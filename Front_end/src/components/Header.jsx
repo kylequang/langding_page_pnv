@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Container, Navbar, NavDropdown, Nav, Image } from "react-bootstrap";
-import Header_Top from "./Header_Top";
+
+import { Container, Navbar, Nav, Image } from "react-bootstrap";
+import HeaderTop from "./HeaderTop";
 class Header extends Component {
   render() {
     return (
       <Container fluid>
-        <Header_Top></Header_Top>
-        {/* bg="light" */}
+        <HeaderTop></HeaderTop>
         <Navbar className="navigation_header" expand="lg">
           <Navbar.Brand>
             <Image id="logo" src="images/logo_homepage.png" />

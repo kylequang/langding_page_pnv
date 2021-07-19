@@ -19,13 +19,14 @@ class Head extends Component {
     return (
       <Container fluid id="slide">
         <ModalVideo
+          id="video"
           channel="youtube"
           isOpen={this.state.isOpen}
           videoId="gkLdO8I76LI"
           onClose={() => this.setState({ isOpen: false })}
         />
 
-        <a onClick={this.openModal}>
+        <a href="#" onClick={this.openModal}>
           <PlayBtn className="icon" size={70} />
         </a>
       </Container>

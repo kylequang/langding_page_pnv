@@ -10,12 +10,12 @@ class Counter extends Component {
           <Row>
             <Col lg={3} sm={6} md={4} className="counter_item">
               <i class="fas fa-graduation-cap"></i>
-              <h4>Sinh viên đang theo học</h4>
+              <h4>Sinh viên theo học</h4>
               <h2 className="counter">127</h2>
             </Col>
             <Col lg={3} sm={6} md={4} className="counter_item">
               <i class="fas fa-user-graduate"></i>
-              <h4>Cựu sinh viên</h4>
+              <h4>Hội Cựu sinh viên</h4>
               <h2 className="counter">350</h2>
             </Col>
             <Col lg={3} sm={6} md={4} className="counter_item">
@@ -33,7 +33,7 @@ class Counter extends Component {
               </h2>
             </Col>
 
-            <Container className="col-12">
+            <Container>
               <div className="wath_video">
                 <a className="popup-youtube">
                   <i className="flaticon-play-button" />
@@ -42,8 +42,7 @@ class Counter extends Component {
             </Container>
           </Row>
         </Container>
-
-        <Container>
+        <Container fluid>
           <Share></Share>
         </Container>
       </Container>

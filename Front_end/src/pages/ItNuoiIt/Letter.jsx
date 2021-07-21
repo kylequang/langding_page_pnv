@@ -47,22 +47,22 @@ class Letter extends Component {
             <Col>
               <div className="content-letter">
                 <h1>Bức thư gửi đến các kỹ sư IT</h1>
-                <h3> Dạo này các bạn có khỏe không?</h3>
-                <h3> Còn hay thức khuya để cày dự án?</h3>
-                <h3>
+                <h2> Dạo này các bạn có khỏe không?</h2>
+                <h2> Còn hay thức khuya để cày dự án?</h2>
+                <h2>
                   PNV hi vọng với sự nỗ lực của các bạn, công ty của bạn vẫn
-                  phát triển từng ngày và tạo ra nhiều giá trị cho cộng đồng.
-                </h3>
-                <h3>
+                  phát triển và tạo ra nhiều giá trị cho cộng đồng.
+                </h2>
+                <h2>
                   Bạn ơi, Nếu xem phí hoạt động của PNV là một phần mềm thì
                   "Covid-19" là một con "Bug" khó fix nhất. Hàng ngày, các thành
-                  viên của tổ chức PNV vẫn đang miệt mài tìm kiếm những
-                  "solution" để phần mềm được triển khai một cách hiệu quả nhất.
-                </h3>
-                <h3>
+                  viên của PNV vẫn đang miệt mài tìm kiếm những "solution" để
+                  phần mềm được triển khai hiệu quả nhất.
+                </h2>
+                <h2>
                   Vì vậy, PNV đang rất cần các bạn, những chuyên gia về công
                   nghệ thông tin, hỗ trợ PNV tiêu diệt con "bug" khó nhằn này.
-                </h3>
+                </h2>
               </div>
             </Col>
           </Row>
@@ -80,15 +80,15 @@ class Letter extends Component {
             <Col>
               <div className="content-letter">
                 <h1>Ước mơ to trong một ngôi nhà nhỏ</h1>
-                <h3>
+                <h2>
                   Có lẽ là một ngôi trường nhỏ, nơi tập trung những sinh viên
                   nghèo có ước mơ to, là nơi mà các em có được cơ hội để được
                   tiếp tục đi học, tự tay cầm lấy cần câu và câu những con cá
                   cho cuộc đời chính mình. Vì sự thành công của các sinh viên
                   sau tốt nghiệp sẽ mở ra nhiều cơ hội khác cho chính người thân
                   của các em sau này hoặc thậm chí trở thành nguồn động lực để
-                  các sinh viên nghèo khác tiếp tục đi học.{" "}
-                </h3>
+                  các sinh viên nghèo khác tiếp tục đi học.
+                </h2>
               </div>
             </Col>
           </Row>

@@ -1,22 +1,23 @@
 import React, { Component } from "react";
-
-class Donate extends Component {
+import { Button } from "react-bootstrap";
+class DonateButton extends Component {
   render() {
     return (
-      <div
-        id="test"
-        style={{ textAlign: "center", marginBottom: "20px", marginTop: "20px" }}
-      >
-        <a href="#">
-          <span />
-          <span />
-          <span />
-          <span />
-          Ủng hộ chúng tôi
-        </a>
-      </div>
+      <>
+        <div className="clearfix">
+          <button className="back" type="button">
+            Back
+            <span />
+            <span />
+            <span />
+          </button>
+
+          <Button className="next" variant="info">
+            {this.props.title}
+          </Button>
+        </div>
+      </>
     );
   }
 }
-
-export default Donate;
+export default DonateButton;

@@ -19,12 +19,28 @@ class NeedHelp extends Component {
       <Container fluid className="needhelp_container">
         <Container>
           <Row>
-            <Col sm={12} md={12} lg={6} className="needhelp_content">
+            <Col sm={12} md={12} lg={12} className="needhelp_content">
               <h4>
                 LÁ LÀNH ĐÙM LÁ RÁCH <i class="fas fa-hands-helping"></i>
               </h4>
+              <Row>
+                <Col>
+                  <h2>Bạn có thể giúp đỡ chúng tôi !!!</h2>
+                </Col>
+                <Col id="button_playvideo">
+                  <ModalVideo
+                    channel="youtube"
+                    isOpen={this.state.isOpen}
+                    videoId="olcVx8xnwWQ"
+                    onClose={() => this.setState({ isOpen: false })}
+                  />
+                  <a onClick={this.openModal}>
+                    <PlayBtn id="icon_need_play" size={70} />
+                    Click! xem ngay
+                  </a>
+                </Col>
+              </Row>
 
-              <h2>Bạn có thể giúp đỡ chúng tôi !!!</h2>
               <p>
                 Nhờ vào những tài trợ của các bạn, chúng tôi có thể duy trì hoạt
                 động của tổ chức và đóng góp nhiều lợi ích hơn cho cộng đồng..
@@ -49,30 +65,11 @@ class NeedHelp extends Component {
                     </a>
                     .
                   </p>
-                  {/* <a className="redirect" href="donate">
-                    <h4> Donate Now !!!</h4>{" "}
-                  </a>
-                  <a className="redirect" href="itnuoiit">
-                    <h4>Tham gia ITNUOIIT cùng chúng tôi !!!</h4>
-                  </a> */}
                   <br></br>
                 </Col>
               </Row>
-            </Col>
-
-            <Col className="people_img">
-              <img class="img_needhelp" src="./images/imgneedhelp.PNG"></img>
-              <ModalVideo
-                channel="youtube"
-                isOpen={this.state.isOpen}
-                videoId="olcVx8xnwWQ"
-                onClose={() => this.setState({ isOpen: false })}
-              />
-              <a onClick={this.openModal}>
-                <PlayBtn id="icon_need_play" size={70} />
-              </a>
               <a className="redirect" href="donate">
-                <h4> Donate Now !!!</h4>{" "}
+                <h4> Donate Now !!!</h4>
               </a>
               <a className="redirect" href="itnuoiit">
                 <h4>Tham gia ITNUOIIT cùng chúng tôi !!!</h4>

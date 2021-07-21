@@ -32,23 +32,20 @@
     <style>
         #formlogin{
             margin-top: 30rem;
-            padding: 50px 50px;
-            background-image: url('./admin-login-background.jpg');
-            background-color: rgb(234, 240, 240);
-          
+            padding: 5%;        
         };
        
 
     </style>
 </head>
-<body style=" background-color:  rgb(202, 221, 221);">
+<body style=" background-image: url(https://i.ibb.co/qjGdLGP/545486.jpg);">
 
-    <div class="container" id="formlogin">
-        <div class="row" id="form">
+    <div class="container" id="formlogin" >
+        <div class="row" id="form" >
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Admin Login</div>
-                    <div class="panel-body">
+                <div class="panel panel-default" style="background-color: none">
+                    <div class="panel-heading" style="background-color: none">Admin Login</div>
+                    <div class="panel-body" style="background-color: none" >
                         <form class="form-horizontal" role="form" method="POST" action="/login">
                             {{ csrf_field() }}
     

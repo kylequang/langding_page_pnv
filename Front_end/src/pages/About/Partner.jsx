@@ -21,29 +21,29 @@ class IndexPartner extends Component {
   render() {
     return (
       <Container fluid id="patner">
-        <h2>Đối Tác Của Chúng Tôi</h2>
+        <h1>Đối Tác Của Chúng Tôi</h1>
         {this.state.partners.length && (
           <OwlCarousel
             className="owl-theme"
             loop
             autoPlay
-            items={6}
-            margin={10}
+            items={5}
+            margin={30}
           >
             {this.state.partners.map((partner) => {
               return (
-                <div class="item">
+                <Container class="item">
                   <details>
                     <summary>
                       <Image
                         className="img_partern"
-                        src={"./images/patner/" + partner.img}
+                        src={partner.img}
                         alt={partner.img}
                       />
                     </summary>
                     <p>{partner.description}</p>
                   </details>
-                </div>
+                </Container>
               );
             })}
           </OwlCarousel>

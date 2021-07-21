@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "./head.scss";
 import ModalVideo from "react-modal-video";
-
 import { PlayBtn } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
 class Head extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       isOpen: false,
     };
@@ -25,7 +24,6 @@ class Head extends Component {
           videoId="gkLdO8I76LI"
           onClose={() => this.setState({ isOpen: false })}
         />
-
         <a href="#" onClick={this.openModal}>
           <PlayBtn className="icon" size={70} />
         </a>

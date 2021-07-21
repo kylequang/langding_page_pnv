@@ -1,0 +1,48 @@
+.logo-image {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.donate-img {
+  height: 700px;
+  width: 100%;
+}
+.logo-image #logo_donate {
+  margin-top: -5px;
+  padding-left: 20px;
+  height: 80px;
+}
+.logo-image .title h2 {
+  font-size: 40px;
+  text-align: justify;
+}
+.iconlanguages {
+  height: 50px;
+  width: 50px;
+}
+#details #traitim0 #traitim {
+  height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .donate-img {
+    height: 200px;
+    width: 100%;
+  }
+  .logo-image #logo_donate {
+    margin-top: -5px;
+    height: 40px;
+  }
+  .logo-image .title h2 {
+    font-size: 10px;
+    text-align: justify;
+  }
+  .logo-image {
+    display: none;
+  }
+  .iconlanguages {
+    display: none;
+  }
+  #details #traitim0 {
+    display: none;
+  }
+}

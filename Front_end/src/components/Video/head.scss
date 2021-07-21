@@ -6,33 +6,27 @@
   background-image: url("./slide.JPG");
 }
 .icon {
-  // padding: 2px 2px;
   size: 100;
   position: relative;
   bottom: 0em;
-  top: 55em;
+  top: 90%;
   text-align: center;
-  margin-left: 45rem;
-  color: #ebdc0c;
+  margin-left: 47%;
+  color: rgb(36, 186, 255);
 }
-
 #slide a :hover {
   size: 100;
   border-radius: 20px;
-  color: #fd6914;
-}
-#btn {
-  background-color: none;
+  color: red;
 }
 
 @media only screen and (max-width: 1366px) {
   #slide {
     height: 600px;
     width: 100%;
-    background-image: url("./slide.JPG");
+    background-image: url("https://i.ibb.co/Yb96qkm/IMG-1184.jpg");
   }
   .icon {
-    // padding: 2px 2px;
     size: 100;
     position: relative;
     bottom: 0em;
@@ -42,21 +36,48 @@
     color: #ebdc0c;
   }
 }
-
 @media only screen and (max-width: 736px) {
   #slide {
-    margin-top: 1px;
     width: 105px;
     height: 200px;
     width: 100%;
-    background-image: url("https://i.ibb.co/Yb96qkm/IMG-1184.jpg");
+    padding-top: 5px;
+    background-image: url("https://i.ibb.co/p3BXYbw/hq720.jpg");
   }
   .icon {
     position: relative;
     bottom: 0em;
     top: 8em;
     text-align: center;
-    margin-left: 7rem;
-    color: #ebdc0c;
+    margin-left: 9rem;
+    color: red;
+  }
+  #slide a :hover {
+    size: 100;
+    border-radius: 20px;
+    color: rgb(0, 174, 255);
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  #slide {
+    width: 105px;
+    height: 200px;
+    width: 100%;
+    padding-top: 5px;
+    background-image: url("https://i.ibb.co/p3BXYbw/hq720.jpg");
+  }
+  .icon {
+    position: relative;
+    bottom: 0em;
+    top: 8em;
+    text-align: center;
+    margin-left: 39%;
+    color: red;
+  }
+  #slide a :hover {
+    size: 100;
+    border-radius: 20%;
+    color: rgb(0, 174, 255);
   }
 }

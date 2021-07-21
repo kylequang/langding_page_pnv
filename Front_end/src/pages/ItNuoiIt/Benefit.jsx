@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import Item from "./ItemBenefit";
 
 class Benefit extends Component {
   constructor(props) {
@@ -7,19 +8,17 @@ class Benefit extends Component {
   }
   render() {
     return (
-      <Container fluid>
-        <Row className="benefit-content">
+      <Container className="benefit" fluid>
+        <Row className="back-benefit">
           <Col xs={4}>
-            <Image
-              id="image-benefit1"
-              className="d-block w-100"
-              src={`images/ItNuoiIT/${this.props.benefit.image}`}
-              rounded
-            />
+            <p>Bạn nhận được gì khi tham gia chương trình</p>
           </Col>
-          <Col xs={8}>
-            <h1>{this.props.benefit.content}</h1>
+          <Col xs={7}>
+            {this.props.benefit.map((elm, index) => {
+              return <Item key={index} children={elm} />;
+            })}
           </Col>
+          <Col xs={1} className="back-benefit"></Col>
         </Row>
       </Container>
     );

@@ -1,6 +1,6 @@
 /* Nền tảng xây dựng dự án */
 .container-found {
-  margin-top: 13px;
+  margin-top: 5px;
   padding-bottom: 10px;
   background-color: rgb(248, 242, 234);
 }
@@ -48,9 +48,9 @@
 }
 @media only screen and (max-width: 736px) {
   .container-found h1 {
-    padding-top: 40px;
+    padding-top: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
   }
   .sub_content_found {
     text-align: center;
@@ -58,9 +58,8 @@
   .sub_content_found span {
     color: #22bbea;
     padding: 5px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
-    /* justify-content: ; */
   }
   .sub_content_found p {
     font-size: 15px;
@@ -70,13 +69,11 @@
 }
 
 /* Giá trị của PN */
-
 .values_containerfluid {
-  background-image: -ms-linear-gradient(-90deg, #f3e2d3 0%, white 100%);
+  background-image: -ms-linear-gradient(-90deg, #f8ebdf 0%, white 100%);
 }
 .values_container {
   margin-bottom: 4px;
-  /* background-color: antiquewhite; */
 }
 .values_container h1 {
   padding-top: 20px;
@@ -88,10 +85,24 @@
   margin-right: 3px;
   font-size: 25px;
 }
-
+.row_value {
+  padding-left: 15%;
+}
 .row_value i {
   margin-left: 50px;
 }
+.row_value p {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  font-size: 25px;
+}
+.row_value i::before {
+  font-size: 50px;
+  color: #fd7611;
+  line-height: 1;
+}
+
 .values_container p:hover {
   color: #22bbea;
 }
@@ -100,6 +111,11 @@
 }
 /* Giá trị của PN */
 @media only screen and (max-width: 1366px) {
+  .values_containerfluid {
+    background-image: -moz-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    background-image: -webkit-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    background-image: -ms-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+  }
   .values_container {
     text-align: center;
   }
@@ -109,30 +125,81 @@
     font-size: 45px;
     color: #22bbea;
   }
+  .row_value i::before {
+    font-size: 50px;
+    color: #fd7611;
+    line-height: 1;
+  }
+  .row_value p {
+    padding-top: 20px;
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 736px) {
+  .values_containerfluid {
+    background-image: -moz-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    background-image: -webkit-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    background-image: -ms-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+  }
   .values_container {
     text-align: center;
   }
   .values_container h1 {
     padding-top: 20px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: #22bbea;
   }
-
-  .row_value i {
-    background-color: #dd6f0f;
-    margin-left: 0px;
+  .row_value {
+    padding-left: 0%;
+  }
+  .row_value i::before {
+    font-size: 40px;
+    color: #fd7611;
+    line-height: 1;
   }
   .values_container p {
-    font-size: 20px;
+    font-size: 25px;
+    text-align: left;
+  }
+  #subcontent_value {
+    background-color: #22bbea;
   }
 }
 
-/* Partner Đối tác */
-.img_partern {
-  border-radius: 10px;
-  height: 30%;
-  width: 30%;
+@media only screen and (max-width: 667px) {
+  .values_containerfluid {
+    background-image: -moz-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    background-image: -webkit-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+    background-image: -ms-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+  }
+  .values_container {
+    text-align: center;
+  }
+  .values_container h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #22bbea;
+  }
+  .row_value {
+    padding-left: 0%;
+  }
+  .row_value i::before {
+    font-size: 40px;
+    color: #fd7611;
+    line-height: 1;
+  }
+  .values_container span i {
+    padding-left: 26%;
+  }
+  .values_container p {
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  #subcontent_value {
+    background-color: #22bbea;
+  }
 }

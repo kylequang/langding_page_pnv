@@ -5,7 +5,6 @@ class Reasion extends Component {
     super(props);
     console.log(this.props);
   }
-
   render() {
     if (this.props.donate) {
       return (
@@ -15,7 +14,7 @@ class Reasion extends Component {
               <Image
                 id="image-donate"
                 className="d-block w-100"
-                src={`images/ItNuoiIT/${this.props.donate.image}`}
+                src={this.props.donate.image}
               />
             </Col>
             <Col xs={5}>

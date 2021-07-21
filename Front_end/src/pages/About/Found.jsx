@@ -27,7 +27,7 @@ class Found extends Component {
           <Row class="row">
             {this.state.buildfoundation.map((item) => {
               return (
-                <Col>
+                <Col sm={12} md={4} lg={4}>
                   <Container className="content_found">
                     <Container
                       className="sub_content_found"

@@ -3,6 +3,7 @@
 // use App\Http\Controllers\GetData;
 
 use App\Http\Controllers\Admin\Admincontroller;
+use App\Http\Controllers\Admin\DeleteData;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Admin\GetData;
@@ -25,12 +26,12 @@ Route::get('/login',function(){
 
 Route::post('login',[Admincontroller::class,'postlogin'])->name('login');
 
-// Route::get('/', [GetData::class,'getdata_home'])->middleware(Adminlogin::class);
-// Route::get('/',[GetData::class,'getdata_home']);
+
 Route::group(['middleware' => Adminlogin::class], function() { 
     Route::get('/', [GetData::class,'getdata_home'])->name('homeadmin');
     Route::get('/logout',[Admincontroller::class,'getLogout'])->name('logout');
-    Route::get('liststaff',function(){
-        return view('admin.liststaff');
-    });
+    Route::get('/liststaff',[GetData::class,'getdata_ListStaff'])->name('liststaff');
+    Route::post('/poststaff',[PostData::class,'PostStaff']);
+    Route::get('deleteStaff/{id}',[DeleteData::class,'deleteStaff']);
+   
 });

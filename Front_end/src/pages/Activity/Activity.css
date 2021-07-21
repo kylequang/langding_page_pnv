@@ -1,0 +1,173 @@
+/* CSS ACTYVITY */
+
+.hoatdong iframe {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.hinhanh img {
+  display: inline-block;
+  margin-top: 10px;
+  vertical-align: top;
+  border-radius: 30px;
+  width: 100%;
+
+  object-fit: cover;
+}
+#imgletter {
+  height: 300px;
+}
+.activity {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.hoatdong {
+  text-align: center;
+  display: flex;
+}
+.hoatdong h1 {
+  margin-bottom: 70px;
+  position: relative;
+  top: 0;
+}
+
+.hoatdong h3 {
+  margin-top: 40px;
+  text-align: center;
+  margin-left: 50px;
+}
+.diachi {
+  font-size: 12px;
+  margin-left: 20px;
+  word-wrap: break-word;
+}
+.video {
+  margin: 20px;
+}
+@media only screen and (max-width: 375px) {
+  .activity h1 {
+    font-size: 22px;
+  }
+  #imgletter {
+    height: 200px;
+  }
+
+  .hoatdong {
+    display: block;
+  }
+
+  .hoatdong h3 {
+    font-size: 20px;
+    padding: auto;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .activity h1 {
+    font-size: 22px;
+  }
+  #imgletter {
+    /* height: 250px; */
+    /* object-fit: cover; */
+  }
+
+  .hoatdong {
+    display: block;
+  }
+  .b strong {
+    font-size: 25px;
+  }
+  .hoatdong h3 {
+    font-size: 20px;
+    padding: auto;
+  }
+  .video h3 b {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .title h1 b {
+    font-size: 22px;
+  }
+
+  .hoatdong iframe {
+    border-radius: 10px;
+
+    margin-left: 0px;
+  }
+  .hoatdong {
+    display: block;
+  }
+
+  .hoatdong h3 {
+    font-size: 20px;
+    padding: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .activity h1 {
+    font-size: 38px;
+  }
+  .hinhanh img {
+    object-fit: cover;
+  }
+  .hoatdong iframe {
+  }
+  .hoatdong {
+    display: block;
+  }
+
+  .hoatdong h3 {
+    font-size: 30px;
+    padding: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .activity h1 {
+    font-size: 22px;
+  }
+  .thua {
+    display: none;
+  }
+  .hinhanh img {
+    object-fit: cover;
+  }
+  .hoatdong iframe {
+    border-radius: 10px;
+
+    margin-left: 0px;
+  }
+  .hoatdong {
+    display: block;
+  }
+
+  .hoatdong h3 {
+    font-size: 30px;
+    padding: auto;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .activity h1 {
+    font-size: 38px;
+  }
+
+  .hoatdong iframe {
+    border-radius: 10px;
+
+    /* height: 250px; */
+    margin-left: 0px;
+  }
+  .hoatdong {
+    display: block;
+  }
+
+  .hoatdong h3 {
+    font-size: 18px;
+    padding: auto;
+  }
+}

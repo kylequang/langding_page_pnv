@@ -4,10 +4,10 @@ import NeedHelp from "../About/NeedHelp";
 import Value from "../About/Value";
 import Intro from "../../components/Video/Intro";
 import Counter from "../About/Counter";
-import Volunteer from "../../components/Form/Volunteer";
 import Partner from "../../pages/About/Partner";
+import Activity from "../Activity/Activity";
+import Staff from "../About/Staff";
 import Head from "../../components/Video/Head";
-import { Container } from "react-bootstrap";
 class Index_HomePage extends Component {
   constructor(props) {
     super(props);
@@ -22,18 +22,17 @@ class Index_HomePage extends Component {
   };
   render() {
     return (
-      <Container fluid>
+      <>
         <Head></Head>
         <Found></Found>
         <Value></Value>
         <Counter></Counter>
         <NeedHelp></NeedHelp>
         <Partner></Partner>
-        <Container fluid style={{ textAlign: "center" }}>
-          <Intro></Intro>
-        </Container>
-        <Volunteer></Volunteer>
-      </Container>
+        <Intro></Intro>
+        <Activity></Activity>
+        <Staff></Staff>
+      </>
     );
   }
 }

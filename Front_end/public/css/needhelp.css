@@ -1,10 +1,9 @@
 .needhelp_container {
   margin-top: 10px;
   padding-top: 10px;
-  background-color: rgb(253, 250, 250);
+  background-color: rgb(243, 243, 243);
   display: block;
   overflow: hidden;
-  /* padding: 60px 0; */
 }
 
 .needhelp_container .needhelp_content .tittle_shap {
@@ -43,7 +42,6 @@
   text-align: left;
   font-size: 23px;
   padding-top: 5px;
-  max-width: 620px;
 }
 
 .needhelp_container .needhelp_content .needhelp_subcontent p {
@@ -117,33 +115,103 @@
 }
 
 .needhelp_container .people_img {
-  padding-top: 100px;
-  /* background-image: url("../images/imgneedhelp.PNG"); */
+  padding-top: 10px;
 }
-
 #icon_need_play {
-  color: yellow;
+  color: red;
   padding: 2px 2px;
   position: relative;
-  top: -5em;
-  left: 15em;
 }
 #icon_need_play:hover {
-  color: red;
+  color: #22bbea;
   border-radius: 15px;
 }
-.redirect {
-  text-decoration: none;
+#button_playvideo a {
+  padding-left: 10px;
+  margin-left: 5px;
+  font-size: 30px;
+}
+#button_playvideo a:hover {
+  color: #22bbea;
 }
 .redirect h4:hover {
   color: #fd7611;
 }
-.img_needhelp {
-  height: 500px;
-  width: 100%;
-}
 
 @media only screen and (max-width: 1336px) {
+  .needhelp_container {
+    background-color: rgb(255, 254, 251);
+  }
+  .needhelp_container .needhelp_content h4 {
+    text-align: center;
+    font: 700 24px/38px "Comfortaa", cursive;
+    color: #22bbea;
+    padding: 20px 0 15px;
+    font-size: 30px;
+  }
+  .needhelp_container .needhelp_content h2 {
+    text-align: left;
+    font: 700 25px/30px "Comfortaa", cursive;
+    color: #fd7611;
+    position: relative;
+  }
+
+  .needhelp_container .needhelp_content h2:after {
+    content: "";
+    text-align: left;
+    position: absolute;
+    height: 4px;
+    width: 58px;
+    background: #fd7611;
+  }
+  .needhelp_container .needhelp_content p {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 1px;
+  }
+  .needhelp_container .needhelp_content .needhelp_subcontent p {
+    font-size: 20px;
+    color: rgba(1, 1, 1, 0.702);
+    padding-top: 5px;
+  }
+  .needhelp_container .needhelp_content .needhelp_subcontent p:first-child {
+    padding-top: 10px;
+  }
+  .needhelp_container .needhelp_content .needhelp_subcontent p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+  }
+  .img_needhelp {
+    height: 400px;
+    width: 100%;
+  }
+  #icon_need_play {
+    color: red;
+    padding: 2px 2px;
+    position: relative;
+  }
+  #icon_need_play :hover {
+    color: #22bbea;
+  }
+  .people_img h4 {
+    text-align: center;
+    font: 700 24px/38px "Comfortaa", cursive;
+    color: #22bbea;
+    padding: 10px;
+    font-size: 25px;
+  }
+  .needhelp_content a {
+    text-decoration: none;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .needhelp_container {
+    background-color: rgb(255, 250, 240);
+  }
   .needhelp_container .needhelp_content h4 {
     text-align: center;
     font: 700 24px/38px "Comfortaa", cursive;
@@ -191,17 +259,40 @@
     width: 100%;
   }
   #icon_need_play {
-    color: yellow;
+    top: 0em;
+    left: -1rem;
+    color: red;
     padding: 2px 2px;
     position: relative;
-    top: -5em;
-    left: 11rem;
   }
-  .people_img h4 {
+  .people_img .image_needhelp {
+    width: 100%;
+    background-color: red;
+    height: 200px;
+    background-image: url("https://i.ibb.co/HGNQpP0/sinhvien.png");
+  }
+  .image_needhelp h4 {
     text-align: center;
     font: 700 24px/38px "Comfortaa", cursive;
     color: #22bbea;
-    padding: 10px;
+    padding-top: 30px;
     font-size: 25px;
+  }
+  .redirect {
+    text-decoration: none;
+  }
+  .redirect h4 {
+    font-size: 25px;
+  }
+  .redirect h4:hover {
+    color: #fd7611;
+  }
+
+  #button_playvideo a {
+    padding-left: 1px;
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 15px;
+    position: relative;
   }
 }

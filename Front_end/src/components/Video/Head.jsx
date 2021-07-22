@@ -20,7 +20,7 @@ class Head extends Component {
       render () {
         return (
           <div>
-              <Container fluid>
+              <Container fluid  >
                 <Image
                         src={back}
                         alt="back"

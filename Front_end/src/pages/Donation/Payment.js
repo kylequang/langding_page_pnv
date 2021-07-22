@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Col, Tabs, Tab } from "react-bootstrap";
-import Card from "./Card";
-import PayPal from "./PayPal";
-import DonateButton from "../../components/Buttons/Donation";
+
 class Payment extends Component {
     render() {
         return (
@@ -14,15 +12,16 @@ class Payment extends Component {
                             defaultActiveKey="card"
                             transition={false}
                             id="noanim-tab-example"
+                            name="donate_method"
                         >
-                            <Tab eventKey="card" title="CARD">
-                                <Card />
+                            <Tab eventKey="card" value="BANK"  onChange={this.props.onChangeAddDonateHandler} title="BANK TRANSFER">
+                                
                             </Tab>
-                            <Tab eventKey="paypal" title="PAYPAL">
-                                <PayPal />
+                            <Tab eventKey="paypal" value="PAYPAL"  onChange={this.props.onChangeAddDonateHandler} title="PAYPAL">
+                                <strong>How much do you want to donate?</strong><br />
+                                $ <input type="text" onChange={this.props.onChangeAddDonateHandler} name="money" />      
                             </Tab>
                         </Tabs>
-                        <DonateButton title="Confirm" />
                     </div>
                 </section>
             </Col>

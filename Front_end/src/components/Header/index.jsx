@@ -1,39 +1,30 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
-import './header.css';
+import './header.scss'
+import {
+  ScrollingProvider,
+  useScrollSection,
+  Section,
+} from 'react-scroll-section';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
 } from "react-router-dom";
-import { Container,Button, Row, Col,Navbar,Brand,Nav,Form,FormControl } from 'react-bootstrap';
+import { Container,Button, Row, Col} from 'react-bootstrap';
 import Header_Top from '../Header_Top';
-class Header extends Component {
-    
-   function($) {   
-        //selector đến menu cần làm việc
-        var TopFixMenu = $("#fixNav");
-        // dùng sự kiện cuộn chuột để bắt thông tin đã cuộn được chiều dài là bao nhiêu.
-          $(window).scroll(function(){
-          // Nếu cuộn được hơn 150px rồi
-              if($(this).scrollTop()>150){
-            // Tiến hành show menu ra   
-              TopFixMenu.show();
-              }else{
-            // Ngược lại, nhỏ hơn 150px thì hide menu đi.
-                  TopFixMenu.hide();
-              }}
-          )
-      }
-
-    render() {
+const Header = () => {
+  const homeSection = useScrollSection('home');
+  const aboutSection = useScrollSection('about');
         return (
-            <>
             <Container fluid fixed-top >
-                <Header_Top></Header_Top>
-                <Nav id="fixNav">
-                <Container fluid>
+                {/* Header top chạy chữ */}
+                
+                    <Header_Top></Header_Top>
+
+                {/* header navigation */}
+                <header >
+                    <Container fluid>
                         <Row>
                             <Col sm={1} md={1} lg={1}>
                                 <img src="images/logo_homepage.png" style={{ height: '60px', marginTop: '10px', marginBottom: '10px', marginLeft: '20px' }} />
@@ -49,7 +40,17 @@ class Header extends Component {
                                             <a href="#">ITNUOIIT</a>
                                         </Link>
                                         <Link to="/about">
-                                            <a href="about.html">Về chúng tôi</a>
+                                        <div class="dropdown">
+                                            <a  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Về chúng tôi
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" onClick={homeSection.onClick} selected={homeSection.selected}>Partner</a>
+                                              <a class="dropdown-item" onClick={aboutSection.onClick} selected={homeSection.selected}>Volunteer</a>
+                                              <a class="dropdown-item" href="#">History</a>
+                                            </div>
+                                          </div>
+                                          
                                         </Link>
                                         <Link to="/blog">
                                             <a href="blog.html">Bài viết</a>
@@ -58,7 +59,7 @@ class Header extends Component {
                                             <a href="contact.html">Liên hệ</a>
                                         </Link>
                                         <Link to='/donate'>
-                                            <a>Ủng hộ</a>
+                                            <a class="btn btn-warning">Ủng hộ</a>
                                         </Link>
                                     </ul>
                                 </nav>
@@ -66,11 +67,9 @@ class Header extends Component {
 
                         </Row>
                     </Container>
-                </Nav>
+                </header>
             </Container>
-          </>
         );
-    }
+    
 }
-
 export default Header;

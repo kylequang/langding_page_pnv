@@ -1,0 +1,76 @@
+/* Nền tảng xây dựng dự án */
+.container-found {
+    margin-top: 10px;
+    background-color: antiquewhite;
+  }
+  .container-found h1 {
+    padding-top: 10px;
+  }
+  .row {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+  }
+  .content_found {
+    margin-top: 10px;
+    /* margin-bottom: 3px; */
+  }
+  .sub_content_found span {
+    color: #22bbea;
+    padding: 10px;
+  }
+  .sub_content_found p {
+    font-size: 20px;
+    color: black;
+  }
+  
+  /* Giá trị của PN */
+  .values_containerfluid {
+    background-image: -ms-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
+  }
+  .values_container {
+    margin-bottom: 4px;
+    background-color: antiquewhite;
+  }
+  .values_container h1 {
+    padding-top: 20px;
+  
+    text-align: center;
+    color: #22bbea;
+  }
+  .values_container p {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 25px;
+  }
+  
+  /* .row_value {
+    text-align: left;
+  } */
+  .row_value i {
+    margin-left: 50px;
+  }
+  .values_container p:hover {
+    color: #22bbea;
+  }
+  .values_container p i {
+    padding-left: 5px;
+  }
+  .values_container span {
+    font-size: 15px;
+    
+  }
+  
+  /* Partner Đối tác */
+  .img_partern {
+    border-radius: 10px;
+    height: 30%;
+    width: 30%;
+  }
+  .partner h1{
+      padding-left: 1%;
+      /* font-size: 100%;
+      font-weight: bold;; */
+  }

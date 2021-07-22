@@ -6,11 +6,12 @@ import Date from "./Date";
 import Comment from "./Comment";
 import Content from "../../components/Contents/Blogs";
 import ReadMore from "../../components/Buttons/ReadMore";
-
+import Sharing from '../Sharing/index';
 class Index_Blog extends Component {
     render() {
         return (
             <>
+            <Sharing/>
                 <Container fluid>
                     <Row className="align-items-center">
                         <Col xs={12} md={12}>

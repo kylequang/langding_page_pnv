@@ -15,7 +15,7 @@ class DonateAmount extends Component {
                                 <div className="warn" />
                             </div>
                         </Form>
-                        <DonateButton title="Next" />
+                        {/* <DonateButton title="Next" /> */}
                     </div>
                 </Row>
             </>

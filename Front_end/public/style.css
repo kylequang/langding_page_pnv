@@ -1238,7 +1238,7 @@
   }
   .btn:hover, .btn:active, .btn:focus {
     padding-right:20px;
-    background: #393e46 !important;
+    background: #0099FF !important;
     color: #fff;
     outline: none !important;
   }

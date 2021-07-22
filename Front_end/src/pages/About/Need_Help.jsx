@@ -7,9 +7,22 @@ import {
 } from "react-router-dom";
 import Donate from '../../components/Buttons/Donate';
 import Share from '../../components/Video/Share';
-import { Container, Row, Col } from 'react-bootstrap';
+import ModalVideo from 'react-modal-video'
+import {  PlayBtn } from 'react-bootstrap-icons'
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 class Need_Help extends Component {
+    constructor () {
+        super()
+        this.state = {
+          isOpen: false
+        }
+        this.openModal = this.openModal.bind(this)
+      }
+    
+      openModal () {
+        this.setState({isOpen: true})
+      }
     render() {
         return (
             <Container fluid className="people_amazing" >
@@ -29,7 +42,13 @@ class Need_Help extends Component {
                             </Row>
                         </Col>
                         <Col sm={6} md={6} lg={6} className="people_img">
-                            <iframe width="700" height="530" src="https://www.youtube.com/embed/olcVx8xnwWQ?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <ModalVideo channel='youtube'  isOpen={this.state.isOpen} videoId='olcVx8xnwWQ' onClose={() => this.setState({isOpen: false})} />
+                            <a onClick={this.openModal}><Image
+                            src="images/Home/share_student.jpg"
+                            className="img-responsive rounded modal-image"
+                            width="100%"
+                            style={{ height: "86%" }}
+                        /></a>
                         </Col>                
                         <Link style={{ marginTop: '20px' }} className="container-fluid" to="/donate"><Donate></Donate></Link>
                     </Row>

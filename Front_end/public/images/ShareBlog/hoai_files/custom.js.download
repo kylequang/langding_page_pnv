@@ -1,0 +1,194 @@
+jQuery( document ).ready(function( $ ) {
+  PointerEventsPolyfill.initialize({});
+
+  $('.et_pb_team_member').click(function() {
+	  $('.toggle_blurb', this).slideToggle('1000', "swing", function () {
+      
+    });
+  });
+
+  $('.pc-expand').click(function(e) {
+    e.preventDefault();
+	  $(this).siblings('.partner-content').slideToggle('1000', "swing", function () { });
+  });
+
+  $('#choice_1_8_0, #choice_4_8_0, #choice_5_8_0').click(function() {
+    if ($(this).is(':checked')) {
+      $('.pn-hearts-wrapper').show();
+    }
+    else {
+      $('.pn-hearts-wrapper').hide();
+    }
+  });
+
+  $('#choice_1_8_1, #choice_4_8_1, #choice_5_8_1').click(function() {
+    if ($(this).is(':checked')) {
+      $('.pn-hearts-wrapper').hide();
+    }
+  });
+
+  // Donation toggles.
+  $('#pn-donate-btn-fr').click(function(e) {
+    e.preventDefault();
+    setEuroCurrency();
+    showDonationForm($, '#pn-donation-form-fr');
+  });
+
+  $('#pn-donate-btn-other').click(function(e) {
+    e.preventDefault();
+    setEuroCurrency($);
+    showDonationForm($, '#pn-donation-form-other');
+  });
+
+  $('#pn-donate-btn-hk').click(function(e) {
+    e.preventDefault();
+    setHKDCurrency($);
+    showDonationForm($, '#pn-donation-form-hk');
+  });
+
+  setEuroCurrency($);
+
+  showFormWithError($);
+});
+
+function setEuroCurrency($) {
+  if (typeof(window.gf_global) === 'undefined') {
+    return;
+  }
+
+  window.gf_global.gf_currency_config = {
+    "name":"Euro","symbol_left":"","symbol_right":"&#8364;","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2
+  };
+
+  var number_format = {"4":false,"5":"decimal_comma","6":false,"7":"decimal_comma","8":false,"9":false,"11":false};
+  window.gf_global.number_formats[5] = number_format;
+  window.gf_global.number_formats[1] = number_format;
+  window.gf_number_format = "decimal_comma";
+}
+
+function setHKDCurrency($) {
+  if (typeof(window.gf_global) === 'undefined') {
+    return;
+  }
+  /*
+'HKD' => array( 'name' => __( 'Hong Kong Dollar', 'gravityforms' ), 'symbol_left' => 'HK$', 'symbol_right' => '', 'symbol_padding' => '', 'thousand_separator' => ',', 'decimal_separator' => '.', 'decimals' => 2 ),
+*/
+  window.gf_global.gf_currency_config = {
+    "name":"Hong Kong Dollar","symbol_left":"HK$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2
+  };
+
+  var number_format = {"4":false,"5":"decimal_dot","6":false,"7":"decimal_dot","8":false,"9":false,"11":false};
+  window.gf_global.number_formats[4] = number_format;
+  window.gf_number_format = "decimal_dot";
+}
+
+function showDonationForm($, formName) {
+  forms = [
+    '#pn-donation-form-fr',
+    '#pn-donation-form-hk',
+    '#pn-donation-form-other'
+  ];
+
+  buttons = [
+    '#pn-donate-btn-fr',
+    '#pn-donate-btn-hk',
+    '#pn-donate-btn-other'
+  ];
+
+  for (var i = 0, len = forms.length; i < len; i++) {
+    form = forms[i];
+    button = buttons[i];
+    if (formName === form && !$(form).is(":visible")) {
+      $(form).show();
+      $(button).css('border-color', 'transparent');
+      $(button).css('background-color', '#eee');
+    }
+    else {
+      $(form).hide();
+      $(button).css('border-color', '');
+      $(button).css('background-color', '');
+    }
+  }
+}
+
+function showFormWithError($) {
+  forms = [
+    '#pn-donation-form-fr',
+    '#pn-donation-form-hk',
+    '#pn-donation-form-other'
+  ];
+
+  for (var i = 0, len = forms.length; i < len; i++) {
+    form = forms[i];
+
+    if ($(form).has('.validation_error').length) {
+      showDonationForm($, form);
+      if (form === '#pn-donation-form-hk') {
+        setHKDCurrency($);
+      }
+    }
+  }
+}
+
+function PointerEventsPolyfill(options){
+  // set defaults
+  this.options = {
+    selector: '*',
+    mouseEvents: ['click','dblclick','mousedown','mouseup'],
+    usePolyfillIf: function(){
+      if(navigator.appName == 'Microsoft Internet Explorer')
+      {
+        var agent = navigator.userAgent;
+        if (agent.match(/MSIE ([0-9]{1,}[\.0-9]{0,})/) != null){
+          var version = parseFloat( RegExp.$1 );
+          if(version < 11)
+            return true;
+        }
+      }
+      return false;
+    }
+  };
+  if(options){
+    var obj = this;
+    jQuery.each(options, function(k,v){
+      obj.options[k] = v;
+    });
+  }
+
+  if(this.options.usePolyfillIf())
+    this.register_mouse_events();
+}
+
+// singleton initializer
+PointerEventsPolyfill.initialize = function(options){
+  if(PointerEventsPolyfill.singleton == null)
+    PointerEventsPolyfill.singleton = new PointerEventsPolyfill(options);
+  return PointerEventsPolyfill.singleton;
+};
+
+// handle mouse events w/ support for pointer-events: none
+PointerEventsPolyfill.prototype.register_mouse_events = function(){
+  // register on all elements (and all future elements) matching the selector
+  jQuery(document).on(this.options.mouseEvents.join(" "), this.options.selector, function(e){
+    if(jQuery(this).css('pointer-events') == 'none'){
+      // peak at the element below
+      var origDisplayAttribute = jQuery(this).css('display');
+      jQuery(this).css('display','none');
+
+      var underneathElem = document.elementFromPoint(e.clientX, e.clientY);
+
+      if(origDisplayAttribute)
+        jQuery(this)
+        .css('display', origDisplayAttribute);
+      else
+        jQuery(this).css('display','');
+
+      // fire the mouse event on the element below
+      e.target = underneathElem;
+      jQuery(underneathElem).trigger(e);
+
+      return false;
+    }
+    return true;
+  });
+};

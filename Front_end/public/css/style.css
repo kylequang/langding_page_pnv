@@ -183,7 +183,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -196,7 +196,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover_2 {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -1147,7 +1147,7 @@ figure {
 }
 .fh5co-social-icons > a:hover, .fh5co-social-icons > a:focus, .fh5co-social-icons > a:active {
   text-decoration: none;
-  color: #5a5a5a;
+  color: #ff5722;
 }
 
 #footer {
@@ -1206,7 +1206,7 @@ figure {
 
 /* ------------- */
 
-.btn {
+/* .btn {
   text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-transition: 0.3s;
@@ -1233,13 +1233,13 @@ figure {
 }
 .btn:hover, .btn:active, .btn:focus {
   padding-right:20px;
-  background: #393e46 !important;
+  background: #22bbea !important;
   color: #fff;
   outline: none !important;
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
   border-color: transparent;
-}
+} */
 
 
 .js .animate-box {

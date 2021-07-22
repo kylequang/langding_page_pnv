@@ -46,7 +46,7 @@ class Counter extends Component {
                         </div>
                     </div>
                 </div>{" "}
-                <Share></Share>
+                {/* <Share></Share> */}
             </section>
         );
     }

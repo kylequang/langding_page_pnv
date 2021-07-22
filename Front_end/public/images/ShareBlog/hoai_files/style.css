@@ -1,0 +1,543 @@
+/*
+ Theme Name:   PN 2.0
+ Theme URI:    http://passerellesnumeriques.org
+ Description:  Passerelles Numeriques 2.0
+ Author:       Simon Manning & Helene Gagaille
+ Author URI:   http://simonmanning.net
+ Template:     Divi
+ Version:      1.0.1
+ License:      Commercial
+ License URI:  N/A
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  pn2.0
+*/
+
+/* Organisation contact form */
+#pn-org-contact .gfield_label {
+    display: none;
+}
+
+/* Fixes amount overflowing onto left side */
+.pn-amount-radio .ginput_container {
+    float: right;
+    width: 50%;
+}
+
+/* Cookie law button colour */
+button#euCookieAcceptWP {
+    background: #22bbea !important;
+}
+
+.footer-flags {
+    display: inline-block;
+}
+
+.footer-flags li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-flags-container {
+    float: right;
+}
+
+/* Footer CTA text */
+.pn-footer-cta {
+    color: #ff9933 !important;
+}
+
+/* Test equal column height */
+@media only screen and (min-width : 981px) {
+    .et_pb_equal_columns .et_pb_column {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .et_pb_equal_columns .et_pb_promo {
+        padding-top: 25% !important;
+        padding-bottom: 25% !important;
+    }
+
+    .et_pb_module {
+        max-width: 100%
+    }
+
+    .et_pb_text_align_center {
+        margin: 0 auto;
+    }
+}
+
+/* Home newsletter signup */
+#pn-home-newsletter-signup {
+    padding: 25px;
+}
+
+#pn-home-newsletter-signup .gform_wrapper {
+    padding-bottom: 0 !important;
+}
+
+#pn-home-newsletter-signup .gfield_label {
+    display: none;
+}
+
+#pn-home-newsletter-signup p {
+    margin-bottom: 20px;
+}
+
+#pn-home-newsletter-signup .gform_footer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#pn-home-newsletter-signup .button {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: 2px solid;
+    padding: 0.3em 1em;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#pn-home-newsletter-signup .button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid transparent;
+}
+
+#pn-home-newsletter-signup input.medium {
+    width: 100%;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 14px 4% !important;
+    border: none !important;
+    border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    color: #666;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 980px) {
+    #pn-home-newsletter-signup .gfield_radio li {
+        width: auto !important;
+    }
+}
+
+/* Donation form customisation */
+/* Support radio */
+/* .pn-donate-form #field_1_8 { */
+.donate-form .pn-support-radio {
+    float: left;
+    display: inline;
+    width: 50%;
+}
+
+/* Amount radio */
+/* .pn-donate-form #field_1_7 { */
+.donate-form .pn-amount-radio {
+    display: inline;
+    width: 50%;
+    clear: both;
+}
+
+.donate-form input.medium {
+    width: 97.5% !important;
+}
+
+/* Contact form customisation */
+.pn-contact-form .validation_error {
+    display: none;
+}
+
+.pn-contact-form input.medium,.pn-contact-form select.medium {
+    width: 97.5% !important;
+}
+
+/* Disable overlays on partners */
+.et_pb_portfolio_grid .et_overlay {
+    display: none;
+}
+
+.partner-content {
+    margin-top: 1em;
+}
+
+.custom-fw-header {
+    padding: 110px 0;
+}
+
+.et_pb_portfolio_meta {
+    display: none;
+}
+
+.pn-footer-info {
+    text-align: center !important;
+    float: none !important;
+    display: inline-block;
+}
+
+/* Hide team member blurbs by default */
+.et_pb_team_member_description .toggle_blurb {
+    display: none;
+}
+
+/* Fix responsive issues with header style */
+.logo_container {
+    /* height: 74px !important; */
+}
+
+#et-top-navigation {
+    padding-left: 220px !important;
+}
+
+/* Override the semi-transparent overlay on sliders */
+.et_pb_slide_overlay_container {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+@media all and (min-width: 981px) {
+  .logo_container {
+      position: relative;
+      z-index: -100;
+  }
+
+  #top-header {
+      z-index: 100;
+  }
+  #logo {
+    position: relative;
+    top: -16px;
+    max-width: 15%;
+  }
+}
+
+.menu-donate-cta {
+    border-radius: 0px;
+}
+
+.menu-donate-cta a {
+    color: #fff !important;
+}
+
+@media all and (min-width: 981px) {
+    .menu-donate-cta {
+        margin-bottom: 16px;
+    }
+}
+
+li.menu-donate-cta {
+    background-color: rgba(255,153,51,0.8);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 10px 10px !important;
+    border-radius: 3px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+li.menu-donate-cta:hover {
+    background-color: rgba(255,153,51,1.0);
+}
+
+/* fixed header button text color */
+.et-fixed-header #top-menu .menu-donate-cta a {
+    color: #fff!important;
+}
+
+/* Remove top part of main header shadow with new logo layout */
+#main-header.et-fixed-header {
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.085) !important;
+    -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.085) !important;
+    box-shadow: none !important;
+}
+
+#mobile_menu > li.lang-item {
+    display: none;
+}
+
+@media only screen and (min-width: 981px) {
+    li.menu-donate-cta {
+        height: 33px;
+    }
+}
+
+/* Footer styles */
+@media only screen and (min-width: 981px) {
+    .pn-footer-row {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    .pn-footer-column {
+        display: table-cell;
+        width: 20%;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .pn-footer-logo {
+        margin-bottom: 10%;
+    }
+
+    .pn-footer-left {
+        width: 50%;
+        float: left;
+    }
+
+    .pn-footer-right {
+        width: 50%;
+        float: right;
+    }
+
+    .pn-footer-clear {
+        clear: both;
+    }
+}
+
+.pn-footer-logo {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pn-footer-parent {
+    margin-bottom: 0.3em;
+}
+
+.pn-footer-list {
+    margin-top: -0.8em !important;
+}
+
+#pn-footer ul {
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+#pn-footer h4,#pn-footer h4 a {
+    color: #22bbea;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+/* Hide bullets in footer */
+#footer-widgets .footer-widget li:before {
+    display: none;
+}
+
+#pn-footer .share-buttons {
+    margin-bottom: 1em;
+}
+
+#pn-footer .share-buttons li {
+    padding-left: 0 !important;
+}
+
+/* Ensure footer widget fills footer area */
+.footer-widget {
+    width: 100% !important;
+}
+
+.fwidget {
+    width: 100% !important;
+}
+
+/* Full width header overlays */
+.custom-fw-header .et_pb_fullwidth_header_overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Home slider overlay */
+.pn-home-slider .et_parallax_bg {
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* background-blend-mode: multiply; */
+}
+
+.pn-home-slider .et_parallax_bg:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Flying hearts on donation form */
+.pn-hearts-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  text-align: center;
+  display: none;
+  pointer-events: none;
+}
+
+.x1 {
+  left: 5%;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.6;
+    -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    left: 25%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+.x3 {
+    left: 55%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    -webkit-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+.x4 {
+    left: 72%;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite, sideWays 0zs ease-in-out infinite alternate;
+}
+.x5 {
+    left: 88%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+.x6 {
+    left: 33%;
+    opacity: 1;
+    -webkit-animation: moveclouds 2s linear infinite, swayWays 1s ease-in-out infinite alternate;
+    animation: moveclouds 10s linear infinite, swayWays 9s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@keyframes moveclouds {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays {
+  0% {
+      margin-left:0px;
+  }
+  100% {
+      margin-left:50px;
+  }
+}
+
+@-keyframes swayWays {
+  0% {
+    transform: rotate(12deg);
+    left:-0.3%;
+  }
+  33%{
+    transform: rotate(-2deg);
+    left: 0.7%;
+  }
+  100% {
+    transform: rotate(0deg);
+    left:-12%;
+  }
+}
+
+.altheart {
+  background: url(
+http://static.indigoimages.ca/2016/shop/113439_img25_twotoneheart.png) no-repeat center;
+  width: 24px;
+  height: 21px;
+  position: relative;
+  display: block;
+}
+
+.heart {
+    position: relative;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 18px;
+    top: 0;
+    width: 18px;
+    height: 30px;
+    background: #CC2022;
+    -moz-border-radius: 20px 50% 0 0;
+    border-radius: 30px 30px 0 0;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+/* Custom styles for PNV Donator form */
+
+.pnv-donator-from {
+	height: 880px
+}
+
+@media (min-width: 576px) {
+	.pnv-donator-from {
+		height: 780px
+	}
+}
+
+@media (min-width: 768px) {
+	.pnv-donator-from {
+		height: 740px
+	}
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Form } from 'react-bootstrap';
+import { Col, Form, Button, Label, Input } from 'react-bootstrap';
 import DonateButton from '../../components/Buttons/Donation';
 class BasicInfo extends Component {
     render() {
@@ -7,41 +7,41 @@ class BasicInfo extends Component {
             <Col md={3}>
                 <section id="details">
                     <div className="contact-info">
-                        <h2>Basic Information</h2>
+                        <h2>Your Information</h2>
                         <Form className="clearfix">
                             <div className="input-group-2">
                                 <label>First Name</label>
-                                <input type="text" />
+                                <input type="text" id="fname" onChange={this.props.myChangeHandler} name="fname"/>
                             </div>
                             <div className="input-group-2">
                                 <label>Last Name</label>
-                                <input type="text" />
+                                <input type="text"  onChange={this.props.onChangeAddDonateHandler} name="lname"/>
                             </div>
                             <div className="input-group-1">
-                                <label>Email Address</label>
-                                <input type="text" />
+                                <label>Email</label>
+                                <input type="text"  onChange={this.props.onChangeAddDonateHandler} name="email" />
                             </div>
                             <hr />
                             <div className="input-group-1">
                                 <label>Street Address</label>
-                                <input type="text" />
+                                <input type="text" onChange={this.props.onChangeAddDonateHandler}  name="address" />
                             </div>
                             <div className="input-group-3">
                                 <label>City</label>
-                                <input type="text" />
+                                <input type="text" onChange={this.props.onChangeAddDonateHandler}  name="city" />
                             </div>
                             <div className="input-group-3">
-                                <label>State</label>
-                                <input type="text" />
+                                <label>Country</label>
+                                <input type="text" onChange={this.props.onChangeAddDonateHandler} name="country" />
                             </div>
                             <div className="input-group-3">
                                 <label>Zip Code</label>
-                                <input type="text" />
+                                <input type="text" onChange={this.props.onChangeAddDonateHandler} name="zipcode" />
                             </div>
                         </Form>
-                        <DonateButton title="Next" />
                     </div>
                 </section>
+                
             </Col>
         )
     }

@@ -2,12 +2,16 @@
     display: block;
     overflow: hidden;
     padding: 30px 0;
+    text-align: center;
+    padding-bottom: 70px;
 }
 
 .become_volunter h2 {
-    font: 700 30px "Comfortaa", cursive;
+    font: 700 30px "Verdana", cursive;
     color: #22bbea;
     text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .become_volunter p {
@@ -35,6 +39,7 @@
 }
 
 .become_volunter .volunter_row:after {
+    display: none;
     content: "";
     position: absolute;
     top: -40px;
@@ -44,20 +49,10 @@
     background: url("../images/volunter-bg.png") no-repeat;
     z-index: -1;
 }
-
-.become_volunter {
-    padding-bottom: 70px;
+.become_volunter .volunter_row h2, p{
+    padding-left: 2em;
 }
 
-.become_volunter .volunter_row:after {
-    display: none;
-}
 
-.become_volunter {
-    text-align: center;
-}
 
-.become_volunter h2 {
-    font-size: 20px;
-    line-height: 30px;
-}
+

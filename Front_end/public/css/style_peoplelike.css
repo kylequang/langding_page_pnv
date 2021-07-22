@@ -1,24 +1,17 @@
 .people_amazing {
     display: block;
     overflow: hidden;
-    padding: 60px 0;
-}
-
-.people_amazing .people_content .tittle_shap {
-    animation: rotation 10s linear infinite;
 }
 
 .people_amazing .people_content h4 {
-    text-align: left;
-    font: 700 24px/38px "Comfortaa", cursive;
+    font: 700 24px/38px "Verdana", cursive;
     color: #fd7611;
-    padding: 20px 0 15px;
     max-width: 315px;
 }
 
 .people_amazing .people_content h2 {
     text-align: left;
-    font: 700 38px/52px "Comfortaa", cursive;
+    font: 700 38px/52px "Verdana", cursive;
     color: #22bbea;
     position: relative;
     padding-bottom: 25px;
@@ -36,14 +29,15 @@
 }
 
 .people_amazing .people_content p {
-    text-align: left;
+    text-align: justify;
     font-size: 18px;
     padding-top: 10px;
     max-width: 620px;
 }
 
 .people_amazing .people_content .video_p p {
-    font-size: 16px;
+    text-align: justify;
+    font-size: 60%;
     color: rgba(1, 1, 1, 0.702);
     padding-top: 20px;
     max-width: 400px;
@@ -100,5 +94,10 @@
 }
 
 .people_amazing .people_img {
-    padding-top: 100px;
+    padding-top: 10%;
+    
+}
+.modal-image:hover{
+    cursor: pointer;
+    transition: all 0.5s ease-out;
 }

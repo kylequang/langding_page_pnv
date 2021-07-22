@@ -33,7 +33,17 @@ class Header extends Component {
                                             <a href="#">ITNUOIIT</a>
                                         </Link>
                                         <Link to="/about">
-                                            <a href="about.html">Về chúng tôi</a>
+                                        <div class="dropdown">
+                                            <a  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Về chúng tôi
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" onClick={homeSection.onClick} selected={homeSection.selected}>Partner</a>
+                                              <a class="dropdown-item" onClick={aboutSection.onClick} selected={homeSection.selected}>Volunteer</a>
+                                              <a class="dropdown-item" href="#">History</a>
+                                            </div>
+                                          </div>
+                                          
                                         </Link>
                                         <Link to="/blog">
                                             <a href="blog.html">Bài viết</a>

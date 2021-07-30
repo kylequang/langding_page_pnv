@@ -21,7 +21,6 @@ class Reasion extends Component {
               <Row className="content-reasion">
                 <h1>50%</h1>
                 <h2>{this.props.donate.content}</h2>
-                {console.log(this.props.donate.content)}
               </Row>
             </Col>
             <Col xs={1}></Col>

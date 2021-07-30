@@ -25,12 +25,12 @@ Route::get('/login',function(){
 })->name('getlogin');
 
 Route::post('login',[Admincontroller::class,'postlogin'])->name('login');
-
-
 Route::group(['middleware' => Adminlogin::class], function() { 
     Route::get('/', [GetData::class,'getdata_home'])->name('homeadmin');
     Route::get('/logout',[Admincontroller::class,'getLogout'])->name('logout');
     Route::get('/liststaff',[GetData::class,'getdata_ListStaff'])->name('liststaff');
+    Route::get('/listdonate',[GetData::class,'getdata_ListDonate'])->name('listdonate');
+
     Route::post('/poststaff',[PostData::class,'PostStaff']);
     Route::get('deleteStaff/{id}',[DeleteData::class,'deleteStaff']);
    

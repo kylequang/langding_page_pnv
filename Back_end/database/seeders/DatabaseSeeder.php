@@ -6,9 +6,10 @@ use App\Models\Admin;
 use App\Models\Buildfoudation;
 use App\Models\Department;
 use App\Models\Devmilestone;
-use App\Models\ItNuoiIt;
+use App\Models\ItNuoiIts;
 use App\Models\Mainvalue;
 use App\Models\Partner;
+use App\Models\Sharings;
 use App\Models\Staff;
 use Illuminate\Database\Seeder;
 
@@ -34,7 +35,7 @@ class DatabaseSeeder extends Seeder
             [
                 'job'=>'Selection',
                 'name'=>'Đoàn Triệu Thành',
-                'avatar'=>'https://i.ibb.co/GcgTNP3/logo.png',
+                'avatar'=>'https://i.ibb.co/0mLMWwW/team-2.png',
                 'descriptions'=>'Selection manager',
                 'admin_role'=>'0'
             ],
@@ -48,7 +49,7 @@ class DatabaseSeeder extends Seeder
             [
                 'job'=>'IT',
                 'name'=>'Lucas Sinrod',
-                'avatar'=>'https://i.ibb.co/GcgTNP3/logo.png',
+                'avatar'=>'https://i.ibb.co/zRwcb8w/team-6.png',
                 'descriptions'=>'IT & Training manager',
                 'admin_role'=>'0'
             ],
@@ -204,17 +205,25 @@ class DatabaseSeeder extends Seeder
         $foundations=[
             [
             'nameofbuild'=>'Tầm nhìn',
-            'descriptions'=>'PNV đấu tranh cho một thế giới mà những thiếu niên kém may mắn có thể bộc lộ được tài năng và ý chí đặt được một cuộc sống tốt hơn nhờ vào giáo dục, đào tạo. ',
+            'descriptions'=>'PNV đấu tranh cho một thế giới 
+            mà những thiếu niên kém may mắn có thể bộc lộ
+            được tài năng và ý chí đặt được một cuộc sống tốt
+            hơn nhờ vào giáo dục, đào tạo và cơ hội sự nghiệp ',
             'icon'=>'fas fa-glasses',
             ],
             [
              'nameofbuild'=>'Mục Tiêu',
-             'descriptions'=>'Mục tiêu PN là giúp đỡ 90% sinh viên theo học có thể thoát nghèo một cách bền vững, trở thành những nhân viên chuyên nghiệp. PN còn mong muốn hạn chế những bất bình đẳng giới tính. ',
+             'descriptions'=>'Mục tiêu PN là giúp đỡ 90% sinh viên
+              theo học có thể thoát nghèo một cách bền vững,
+               trở thành những nhân viên chuyên nghiệp.
+                PN còn mong muốn hạn chế bất bình đẳng giới tính. ',
              'icon'=>'fas fa-bullseye',
              ],
             [
                 'nameofbuild'=>'Sứ Mệnh',
-                'descriptions'=>'Sứ mệnh của chúng tôi là tạo điều kiện cho các thanh niên có hoàn cảnh khó khăn được học hành, được đào tạo chuyên môn và đào tạo kĩ năng trong lĩnh vực kĩ thuật số.',
+                'descriptions'=>'Sứ mệnh của chúng tôi là tạo điều kiện
+                 cho các thanh niên có hoàn cảnh khó khăn được học hành,
+                  được đào tạo chuyên môn và đào tạo kĩ năng trong lĩnh vực kĩ thuật số.',
                 'icon'=>'fas fa-american-sign-language-interpreting',
             ],
 
@@ -381,7 +390,7 @@ class DatabaseSeeder extends Seeder
         ];
         try {
             foreach ($itnuoiits as $item) {
-                ItNuoiIt::create($item);
+                ItNuoiIts::create($item);
             }
         } catch (\Throwable $th) {
         }  
@@ -392,21 +401,21 @@ class DatabaseSeeder extends Seeder
             'descriptionst'=>'Phòng Tuyển sinh có chức năng Xây dựng, lập kế hoạch và tổ chức các hoạt động liên quan đến tuyển sinh . Tìm kiếm những học sinh có hoàn cảnh khó khăn không có khả năng học tập. ',
             'icon'=>'null',
             'number'=>'2 thành viên',
-            'image'=>'null',
+            'image'=>'https://i.ibb.co/VWt7dMp/IMG-1237.jpg',
             ],
 
             ['nameDepartment'=>'Phòng đào tạo',
              'descriptionst'=>'Xây dựng, phát triển, quản lý chương trình đào tạo và các hoạt động giảng dạy . Tham mưu hoạch định chiến lược phát triển đào tạo. Theo dõi quá trình giảng dạy, học tập và kết quả học tập.',
              'icon'=>'null',
              'number'=>'11 thành viên',
-             'image'=>'null',
+             'image'=>'https://i.ibb.co/nDrwnsw/IMG-1177.jpg',
              ],
 
             ['nameDepartment'=>'Phòng đối ngoại',          
              'descriptionst'=>'Xây dựng mục tiêu và kế hoạch tuyên truyền, quảng bá hình ảnh, phát triển thương hiệu và hình ảnh của Trường. Chủ động tìm kiếm, tìm hiểu các tổ chức, cá nhân có năng lực, và thiện chí để hợp tác.',
             'icon'=>'null',
             'number'=>' 3 thành viên',  
-            'image'=>'null',   
+            'image'=>'https://i.ibb.co/z57HTjV/IMG-1232.jpg',   
             ],
 
             [
@@ -414,7 +423,7 @@ class DatabaseSeeder extends Seeder
                 'descriptionst'=>'Công việc của phòng nhân sự & tài chính là các hoạt động tuyển dụng, lên kế hoạch triển khai các chính sách phù hợp để duy trì nguồn nhân lực cho trường và quản lý tài chính.',
                 'icon'=>'null',
                 'number'=>' 3 thành viên',
-                'image'=>'null',     
+                'image'=>'https://i.ibb.co/9qymmGy/IMG-1229.jpg',     
             ],
 
             [
@@ -422,7 +431,7 @@ class DatabaseSeeder extends Seeder
                 'descriptionst'=>'Quản lý đời sống của sinh viên. Lên kế hoạch các chương trình kỹ năng đời sống. Gỉai quyết những vấn đề ở ktx và hỗ trợ đời sống tinh thần cho sinh viên',
                 'icon'=>'null',
                 'number'=>' 4 thành viên',
-                'image'=>'null',     
+                'image'=>'https://i.ibb.co/7tKGRLH/IMG-1231.jpg',     
             ],
         ];
             try {
@@ -430,6 +439,32 @@ class DatabaseSeeder extends Seeder
                     Department::create($item);
                 }
             } catch (\Throwable $th) {
-            }  
+            } 
+        $sharings=[
+            [
+                'name'=> 'Hoài NGÔ THỊ MỸ',
+                'image'=>'https://i.ibb.co/KKrM9Ym/hoai23.jpg',
+                'content'=>'Nhiều người đã hỏi em rằng “Tại sao là con gái mà mà lại chọn nghề IT này cho cực, sao không đi theo ngành giáo viên hay du lịch cho khỏe”, rồi “Con gái theo ngành này thì không bao giờ bằng con trai đâu”. Khi ấy em cũng không biết phải trả lời thế nào, chỉ biết rằng mình nhất định phải theo đuổi ước mơ này dù có chuyện gì. Em tin rằng nếu cố gắng thì em sẽ làm được. Và em đã chọn PN là nơi nuôi dưỡng ước mơ ấy.”',
+                'description'=>'Sinh viên, khóa 2023, PN Việt Nam'
+             ],
+             [
+                 'name'=> 'Lucas SINROD',
+                 'image'=>'https://i.ibb.co/zRwcb8w/team-6.png',
+                 'content'=>'Người ta luôn nghĩ rằng thế giới CNTT rất lạnh lẽo vì chỉ toàn máy móc và AI. Nhưng thông qua PN, tôi đã khám phá lại khía cạnh nhân văn của công nghệ. Những nụ cười tươi tắn hay hay những gương mặt tò mò của sinh viên đã gợi nhớ cho tôi về lí do mà mình bắt đầu học code. Chính là vì thế giới trong máy tính và những tiến bộ công nghệ tràn đầy sức hấp dẫn ấy!.',
+                 'description'=>'Giáo đốc Đào tạo & IT, PN Việt Nam'
+             ],
+             [
+                 'name'=> 'Cường NGUYỄN HỮU',
+                 'image'=>'https://i.ibb.co/526RbVh/cuong19.jpg',
+                 'content'=>'PN Việt Nam đến như một phép màu. Chúng em là khóa đầu tiên của chương trình đào tạo mới kéo dài 3 năm. Chúng em đã có nhiều thời gian hơn để tìm hiểu các công nghệ tiên tiến mà các công ty cần, cũng như cải thiện khả năng tiếng Anh và kĩ năng mềm của mình – những hành trang cần thiết trên con đường sự nghiệp. Chúng em được học cách trở thành một thành viên có giá trị trong nhóm, một nhà lãnh đạo tài tình, hoặc thậm chí là một doanh nhân thành công.',
+                 'description'=>'Cựu sinh viên PNV, khóa 2019, Lập trình viên full stack, mgm technology partners'
+             ],      
+        ] ;
+        try {
+            foreach ($sharings as $item) {
+                Sharings::create($item);
+            }
+        } catch (\Throwable $th) {
+        } 
     }
 }

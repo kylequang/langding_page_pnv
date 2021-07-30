@@ -1,7 +1,18 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Share from "../../components/Video/Share";
+import ModalVideo from "react-modal-video";
+
 class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false,
+    };
+    this.openModal = this.openModal.bind(this);
+  }
+  openModal() {
+    this.setState({ isOpen: true });
+  }
   render() {
     return (
       <Container fluid className="countarup_area">
@@ -16,13 +27,15 @@ class Counter extends Component {
             <Col lg={3} sm={6} md={4} className="counter_item">
               <i class="fas fa-user-graduate"></i>
               <h4>Hội Cựu sinh viên</h4>
-              <h2 className="counter">350</h2>
+              <h2 className="counter" id="cl350">
+                350
+              </h2>
             </Col>
             <Col lg={3} sm={6} md={4} id="number700" className="counter_item">
               <i class="fas fa-dollar-sign"></i>
               <h4>Mức lương TB </h4>
-              <h2>
-                <span className="counter">~700</span>$
+              <h2 className="Counter" id="cl350">
+                700 $
               </h2>
             </Col>
             <Col lg={3} sm={6} md={4} className="counter_item">
@@ -34,14 +47,19 @@ class Counter extends Component {
             </Col>
 
             <Container className="wath_video">
-              <a className="popup-youtube">
-                <i className="flaticon-play-button" />
-              </a>
+              <a className="popup-youtube" onClick={this.openModal}></a>
             </Container>
+
+            <ModalVideo
+              id="video"
+              channel="youtube"
+              isOpen={this.state.isOpen}
+              videoId="eh97v0k0poI"
+              onClose={() => this.setState({ isOpen: false })}
+            />
           </Row>
         </Container>
-
-        <Share></Share>
+        {/* <Share></Share> */}
       </Container>
     );
   }

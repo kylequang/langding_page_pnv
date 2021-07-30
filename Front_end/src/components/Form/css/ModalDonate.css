@@ -1,0 +1,101 @@
+.button-modal {
+  position: fixed !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  width: 4.6rem !important;
+  height: 4.6rem !important;
+  font-size: 1rem !important;
+  top: 80%;
+  z-index: 1;
+}
+.modalTitle {
+  font-size: 1.2rem !important;
+}
+.button-modal:hover {
+  background-color: #f74d50;
+  border-color: #f74d50;
+}
+.close {
+  width: 25% !important;
+}
+.modal-label {
+  width: 100% !important;
+}
+.close:hover {
+  background-color: rgb(233, 76, 76);
+}
+.modal-title {
+  font-size: 1.5rem !important;
+  color: #54acbf;
+  margin-bottom: 0.5rem;
+}
+.form-modal {
+  height: auto;
+}
+.close-button {
+  padding: 0;
+  border: rgb(233, 76, 76);
+  background-color: rgb(233, 76, 76);
+  width: 25%;
+  height: 20%;
+}
+.close-button:hover {
+  background-color: red;
+}
+
+@media (max-width: 767px) {
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 1441px) {
+}
+@media (min-width: 2560px) {
+  .button-modal {
+    width: 10rem !important;
+    height: 10rem !important;
+    font-size: 2.5rem !important;
+  }
+  .modal-dialog {
+    margin-left: 25%;
+  }
+  .modal-content {
+    width: 220%;
+  }
+  .modal-title {
+    font-size: 3rem !important;
+  }
+  .modalTitle {
+    font-size: 2.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .modalText {
+    font-size: 2.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .modal-input {
+    margin-bottom: 2rem !important;
+    border: #333 solid 1px;
+    font-size: 2rem !important;
+  }
+  .close-button {
+    font-size: 2.5rem !important;
+  }
+  .modal-submit {
+    font-size: 2.5rem !important;
+  }
+  .select {
+    font-size: 1rem !important;
+    width: 15% !important;
+    border: #333;
+    margin-bottom: 2rem !important;
+  }
+}

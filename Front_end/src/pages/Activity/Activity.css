@@ -1,28 +1,54 @@
 /* CSS ACTYVITY */
+#activity_containerfluid {
+  margin-top: -20px;
+  background-color: rgb(248, 246, 244);
+}
+#activity_containerfluid .activity {
+}
+#activity_containerfluid .activity .title {
+  color: #22bbea;
+  text-align: center;
+  padding-top: 10%;
+}
+.item {
+  text-align: center;
+}
+.item h5 {
+  color: #000000;
+  font-size: 23px;
+  padding-top: 2%;
+}
+.item #imgletter {
+  height: 350px;
+}
+.item img:hover {
+  border: rosybrown solid 2px;
+  transition: 0.3s linear;
+  border-radius: 10px;
+}
 
 .hoatdong iframe {
-  border-radius: 5px;
+  margin: 10px;
+  border-radius: 10px;
   width: 100%;
 }
 
 .hinhanh img {
   display: inline-block;
-  margin-top: 10px;
+  padding: 5px;
+  margin-top: 40px;
   vertical-align: top;
   border-radius: 30px;
   width: 100%;
-
   object-fit: cover;
-}
-#imgletter {
-  height: 300px;
-}
-.activity {
-  text-align: center;
 }
 
 .title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.activity.tittle h1 b {
+  padding-top: 10px;
+  color: rgb(14, 137, 253);
 }
 
 .hoatdong {
@@ -36,9 +62,12 @@
 }
 
 .hoatdong h3 {
-  margin-top: 40px;
-  text-align: center;
+  font-size: 23px;
+  text-align: unset;
   margin-left: 50px;
+}
+.rowvideo {
+  padding-top: 5%;
 }
 .diachi {
   font-size: 12px;
@@ -68,10 +97,6 @@
 @media only screen and (max-width: 414px) {
   .activity h1 {
     font-size: 22px;
-  }
-  #imgletter {
-    /* height: 250px; */
-    /* object-fit: cover; */
   }
 
   .hoatdong {
@@ -115,7 +140,9 @@
   .hinhanh img {
     object-fit: cover;
   }
-  .hoatdong iframe {
+
+  #imgletter {
+    height: 300px;
   }
   .hoatdong {
     display: block;
@@ -171,3 +198,5 @@
     padding: auto;
   }
 }
+
+/* Hiệu ứng */

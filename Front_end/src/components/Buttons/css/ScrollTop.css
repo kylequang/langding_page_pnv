@@ -1,0 +1,23 @@
+.App {
+  font-family: sans-serif;
+  /* padding: 1rem 5rem; */
+}
+
+.scroll-to-top {
+  position: fixed;
+  left: 1rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+  padding: 0.1rem;
+  bottom: 1rem;
+  margin-right: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

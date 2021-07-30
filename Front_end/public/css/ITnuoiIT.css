@@ -22,7 +22,7 @@
 }
 /* Reason */
 .reason {
-  background-image: url("../images/ItNuoiIt/banner1.jpg");
+  background-image: url("https://i.ibb.co/8Y9Ft86/banner1.jpg");
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -48,11 +48,11 @@
 }
 /* Covid */
 #image-covid {
+  padding-top: 5%;
   background-size: 100%;
-  margin-top: 8%;
 }
 .covid {
-  background-image: url("../images/ItNuoiIt/banner1.jpg");
+  background-image: url("https://i.ibb.co/CH6Kt3T/banner2.jpg");
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
@@ -60,11 +60,19 @@
   background-size: 100%;
 }
 .covid-content {
+  margin-top: 0.2rem;
   background-color: white;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
+.covid-content h1 {
+  color: #54acbf;
+  font-size: 2.5rem !important;
+}
+.covid-content h2 {
+  color: #54acbf;
+  font-size: 1.5rem !important;
+}
 /* Letter */
 .letter {
   width: 100%;
@@ -129,9 +137,12 @@
   background-color: #54acbf;
   border: 20px solid #54acbf;
 }
-
+.mean {
+  margin-right: 0.2rem;
+}
+/* Join */
 .join {
-  width: 100%;
+  width: 100% !important;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
@@ -217,12 +228,27 @@
 }
 
 .epilogue {
-  width: 100%;
+  width: 100% !important;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
 }
-
+.not-found {
+  color: #f74d50;
+}
+.forgotCode {
+  width: 100% !important;
+  font-size: 1rem !important;
+  text-align: left;
+  color: #54acbf !important;
+  background-color: white;
+  border: white;
+}
+.forgotCode:hover {
+  color: #f74d50 !important;
+  background-color: white;
+  border: white;
+}
 @media (max-width: 767px) {
   .container-itnuoiit {
     width: 100% !important;
@@ -270,7 +296,7 @@
     font-size: 0.5rem !important;
   }
   #imgletter {
-    height: 200px !important;
+    height: 180px !important;
   }
   .benefit {
     margin-bottom: 1rem;
@@ -284,8 +310,8 @@
   #image-benefit1,
   #image-benefit2,
   #image-benefit3 {
-    width: 45px !important;
-    height: 45px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   .meaning {
     margin-bottom: 2rem;
@@ -301,8 +327,12 @@
   .et_pb_section .et_pb_column .et_pb_module {
     margin-bottom: 30px;
   }
-  #appeal {
-    font-size: 3rem;
+  .content-reasion h1 {
+    font-size: 2rem !important;
+  }
+  .content-reasion h2 {
+    font-size: 1.5rem !important;
+    color: white;
   }
   .container-itnuoiit {
     width: 100% !important;
@@ -314,21 +344,67 @@
   .covid-content h2 {
     font-size: 1rem !important;
   }
+  .content-letter h1 {
+    font-size: 1.2rem !important;
+  }
+  .content-letter h2 {
+    font-size: 0.8rem !important;
+  }
+  #imgletter {
+    height: 240px !important;
+  }
+  #image-benefit1,
+  #image-benefit2,
+  #image-benefit3 {
+    width: 80px !important;
+    height: 80px !important;
+  }
   .back-benefit p {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
+  }
+  .benefit-content h1 {
+    font-size: 1.2rem !important;
   }
 }
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
-  #meaning {
-    font-size: 4rem;
-  }
-  #appeal {
-    font-size: 4rem;
-  }
   .container-itnuoiit {
     width: 90% !important;
+  }
+  .content-reasion h1 {
+    font-size: 2.5rem !important;
+  }
+  .content-reasion h2 {
+    font-size: 2rem !important;
+    color: white;
+  }
+  .covid-content h1 {
+    font-size: 2rem !important;
+  }
+  .covid-content h2 {
+    font-size: 1.5rem !important;
+  }
+  .content-letter h1 {
+    font-size: 1.2rem !important;
+  }
+  .content-letter h2 {
+    font-size: 0.8rem !important;
+  }
+  #imgletter {
+    height: 260px !important;
+  }
+  #image-benefit1,
+  #image-benefit2,
+  #image-benefit3 {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .back-benefit p {
+    font-size: 2rem !important;
+  }
+  .benefit-content h1 {
+    font-size: 1.2rem !important;
   }
   .content-letter h1 {
     font-size: 1.5rem !important;
@@ -337,7 +413,84 @@
     font-size: 1rem !important;
   }
 }
-@media (min-width: 1441px) {
+@media (min-width: 1367px) and (max-width: 1680px) {
+  .container-itnuoiit {
+    width: 70% !important;
+  }
+  .content-reasion h1 {
+    font-size: 4rem !important;
+  }
+  .content-reasion h2 {
+    font-size: 2.5rem !important;
+    color: white;
+  }
+  .covid-content h1 {
+    color: #54acbf;
+    font-size: 3rem !important;
+  }
+  .covid-content h2 {
+    color: #54acbf;
+    font-size: 2rem !important;
+  }
+  #image-covid {
+    background-size: 100% auto;
+    height: auto;
+  }
+  #imgletter {
+    height: 450px !important;
+  }
+  .content-letter h1 {
+    font-size: 2rem !important;
+  }
+  .content-letter h2 {
+    font-size: 1.5rem !important;
+  }
+  #image-benefit1,
+  #image-benefit2,
+  #image-benefit3 {
+    width: 101px !important;
+    height: 160px !important;
+  }
+  .back-benefit p {
+    font-size: 3rem !important;
+  }
+  .benefit-content h1 {
+    font-size: 2rem !important;
+  }
+  .content-join {
+    font-size: 1.5rem !important;
+  }
+  .recover {
+    font-size: 2rem !important;
+  }
+  .donationForm
+    .donationFormGroup
+    .app_donationFormGroupContent__h6cMh
+    .groupText {
+    font-size: 2rem !important;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+  }
+  .donationFormTitle {
+    font-size: 2rem !important;
+  }
+  .app_groupInput__3Xbjj,
+  .timeDonate,
+  .typeDonate {
+    font-size: 2rem !important;
+  }
+  .app_donationFormActionsForgot__2C75E {
+    font-size: 1.5rem !important;
+    color: #54acbf;
+  }
+  .forgotCode {
+    font-size: 1.5rem !important;
+  }
+  .app_buttonSubmit__1xg3x {
+    font-size: 1.5rem !important;
+  }
+}
+@media (min-width: 1681px) and (max-width: 2560px) {
   .container-itnuoiit {
     width: 70% !important;
   }
@@ -361,7 +514,7 @@
     height: auto;
   }
   #imgletter {
-    height: 550px;
+    height: 580px;
   }
   .content-letter h1 {
     font-size: 3rem !important;
@@ -406,5 +559,88 @@
   .app_donationFormActionsForgot__2C75E {
     font-size: 1.5rem !important;
     color: #54acbf;
+  }
+  .forgotCode {
+    font-size: 2rem !important;
+  }
+  .app_buttonSubmit__1xg3x {
+    font-size: 2rem !important;
+  }
+}
+@media (min-width: 2561px) {
+  .container-itnuoiit {
+    width: 70% !important;
+  }
+  .content-reasion h1 {
+    font-size: 3.5rem !important;
+  }
+  .content-reasion h2 {
+    font-size: 2.5rem !important;
+    color: white;
+  }
+  .covid-content h1 {
+    color: #54acbf;
+    font-size: 3rem !important;
+  }
+  .covid-content h2 {
+    color: #54acbf;
+    font-size: 2rem !important;
+  }
+  #image-covid {
+    background-size: 100% auto;
+    height: auto;
+  }
+  #imgletter {
+    height: 580px;
+  }
+  .content-letter h1 {
+    font-size: 3rem !important;
+  }
+  .content-letter h2 {
+    font-size: 2rem !important;
+  }
+  #image-benefit1,
+  #image-benefit2,
+  #image-benefit3 {
+    width: 141px !important;
+    height: 220px !important;
+  }
+  .back-benefit p {
+    font-size: 4rem !important;
+  }
+  .benefit-content h1 {
+    font-size: 3rem !important;
+  }
+  .content-join {
+    font-size: 2rem !important;
+  }
+  .recover {
+    font-size: 2rem !important;
+  }
+  .donationForm
+    .donationFormGroup
+    .app_donationFormGroupContent__h6cMh
+    .groupText {
+    font-size: 2.5rem !important;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+  }
+  .donationFormTitle {
+    font-size: 3rem !important;
+  }
+  .app_groupInput__3Xbjj,
+  .timeDonate,
+  .typeDonate {
+    font-size: 2.5rem !important;
+  }
+  .app_donationFormActionsForgot__2C75E {
+    font-size: 1.5rem !important;
+    color: #54acbf;
+  }
+  .forgotCode {
+    font-size: 2rem !important;
+  }
+  .app_buttonSubmit__1xg3x {
+    font-size: 2rem !important;
   }
 }

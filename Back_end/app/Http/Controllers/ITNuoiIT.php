@@ -39,7 +39,7 @@ class ITNuoiIT extends Controller
         if ($donate->type === "month") {
             $code = "DNTT" . $donate->id;
         } else if ($donate->type === "once") {
-            $code = "DNML" . $donate->id;
+            $code = "DNML" .$donate->id;
         }
         $donate->code = $code;
         $donate->save();
@@ -53,7 +53,6 @@ class ITNuoiIT extends Controller
         }
         SendMail::dispatch($data, $donate->email)->delay(now()->addMinute(1));
         return $donate;
-        // return redirect('home');
     }
     public function recover(Request $request)
     {

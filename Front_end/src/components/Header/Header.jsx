@@ -10,7 +10,7 @@ class Header extends Component {
         <HeaderTop></HeaderTop>
         <Navbar className="navigation_header" expand="lg">
           <Navbar.Brand>
-            <Image id="logo" src="images/logo_homepage.png" />
+            <Image id="logo" src="https://i.ibb.co/3NNw3Fw/logo-homepage.png" />
             <i class="fas fa-globe"></i>
           </Navbar.Brand>
           <Navbar.Toggle id="icontoggle" aria-controls="navbarScroll" />

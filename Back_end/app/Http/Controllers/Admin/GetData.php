@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Buildfoudation;
 use App\Models\Mainvalue;
 use App\Http\Controllers\Controller;
+use App\Models\Payment;
 use App\Models\Staff;
 
 class GetData extends Controller
@@ -25,6 +26,11 @@ class GetData extends Controller
     public function getdata_ListStaff(){
         $staffs = Staff::all();
         return view('admin.liststaff',compact('staffs'));
+    }
+    public function getdata_ListDonate(){
+        $donate=Payment::all();
+        return view('admin.listDonate',compact('donate'));
+
     }
 
    

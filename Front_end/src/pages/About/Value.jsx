@@ -10,6 +10,7 @@ class Value extends Component {
       setOpen: false,
     };
   }
+
   componentDidMount = async () => {
     await Call_API(`mainvalue`, "GET", null).then((db) => {
       if (db.data) {
@@ -27,31 +28,11 @@ class Value extends Component {
           <h1> 5 GIÁ TRỊ CHÍNH </h1>
           <Row className="row_value">
             {this.state.mainvalue.map((item) => {
-              // if (item.id === 5 || item.id === 4) {
-              //   return (
-              //     <Col lg={6} id="tontrong">
-              //       <span>
-              //         <i className={item.icon} />
-              //       </span>
-              //       <OverlayTrigger
-              //         placement="bottom"
-              //         overlay={
-              //           <Tooltip id={`tooltip-${item}`}>
-              //             <strong>{item.descriptions}</strong>.
-              //           </Tooltip>
-              //         }
-              //       >
-              //         <p>{item.name_value}</p>
-              //       </OverlayTrigger>
-              //     </Col>
-              //   );
-              // } else {
               return (
                 <Col sm={12} md={4}>
                   <span>
                     <i className={item.icon} />
                   </span>
-
                   <OverlayTrigger
                     placement="bottom"
                     overlay={

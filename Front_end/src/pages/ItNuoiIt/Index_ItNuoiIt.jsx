@@ -10,6 +10,10 @@ import Benefit from "./Benefit";
 import FormDonate from "./FormDonate";
 import Join from "./Join";
 import FormForgot from "./FormForgot";
+import Footer from "../../components/Footer/Footer";
+import ModalDonate from "../../components/Form/ModalDonate";
+import ScrollTop from "../../components/Buttons/ScrollTop";
+
 class Index_ItNuoiIt extends Component {
   constructor(props) {
     super(props);
@@ -46,6 +50,7 @@ class Index_ItNuoiIt extends Component {
       return (
         <Container fluid>
           <Slide />
+          <ModalDonate></ModalDonate>
           <div className="container-itnuoiit">
             {this.state.data.slice().map((elm, index) => {
               if (elm.type === "donate") {
@@ -81,10 +86,15 @@ class Index_ItNuoiIt extends Component {
                 <FormForgot />
               )}
             </Container>
-            <Container className="epilogue">
-              <Image className="d-block w-100" src="images/ItnuoiIt/17.jpg" />
-            </Container>
+            <div className="epilogue">
+              <Image
+                className="d-block w-100"
+                src="https://i.ibb.co/fqqQWMw/needhelp.jpg"
+              />
+            </div>
           </div>
+          <ScrollTop></ScrollTop>
+          <Footer></Footer>
         </Container>
       );
     } else {

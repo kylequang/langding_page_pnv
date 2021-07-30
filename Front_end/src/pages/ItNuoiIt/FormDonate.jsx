@@ -10,6 +10,7 @@ class FormDonate extends Component {
     };
     this.submitHandle = this.submitHandle.bind(this);
   }
+
   async submitHandle(e) {
     e.preventDefault();
     await Call_API("postForm", "POST", {
@@ -44,7 +45,6 @@ class FormDonate extends Component {
             action="postForm"
             method="POST"
             onSubmit={this.submitHandle}
-            encType="multipart/form-data"
           >
             <h2 className="donationFormTitle">
               Bạn vui lòng nhập thông tin tại đây để nhận mã hỗ trợ (Please
@@ -153,7 +153,7 @@ class FormDonate extends Component {
                 className="app_donationFormGroupContent__h6cMh"
               >
                 <span className="groupText">
-                  Nếu bạn chọn hình thức hàng tháng, lựa chọn thời gian hỗ trợ
+                  Bạn chọn hình thức hàng tháng, lựa chọn thời gian hỗ trợ
                   <span
                     className="app_red__VN7RT"
                     title="Trường này là bắt buộc"

@@ -2,7 +2,7 @@
 .container-found {
   margin-top: 5px;
   padding-bottom: 10px;
-  background-color: rgb(248, 242, 234);
+  background-color: rgb(253, 250, 246);
 }
 .container-found h1 {
   padding-top: 50px;
@@ -21,11 +21,17 @@
 .sub_content_found span {
   color: #22bbea;
   padding: 10px;
-  font-size: 30px;
+  font-size: 35px;
   justify-content: center;
 }
+.sub_content_found span i {
+  color: #16bff3;
+  font-size: 36px;
+}
+
 .sub_content_found p {
-  font-size: 20px;
+  text-align: justify;
+  font-size: 25px;
   color: black;
 }
 
@@ -73,9 +79,11 @@
   background-image: -ms-linear-gradient(-90deg, #f8ebdf 0%, white 100%);
 }
 .values_container {
+  padding-top: 20px;
   margin-bottom: 4px;
 }
 .values_container h1 {
+  padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
   color: #22bbea;
@@ -83,7 +91,7 @@
 .values_container p {
   margin-left: 3px;
   margin-right: 3px;
-  font-size: 25px;
+  font-size: 30px;
 }
 .row_value {
   padding-left: 15%;
@@ -202,4 +210,10 @@
   #subcontent_value {
     background-color: #22bbea;
   }
+}
+
+/* 
+Chặng đường phát triển */
+.devmilestone {
+  margin-top: 20px;
 }

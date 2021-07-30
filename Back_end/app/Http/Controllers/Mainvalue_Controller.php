@@ -36,7 +36,7 @@ class Mainvalue_Controller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd("hihihihih");
     }
 
     /**

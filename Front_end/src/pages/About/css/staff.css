@@ -1,15 +1,8 @@
-.img_partern {
-  border-radius: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 200px;
-  width: 300px;
-}
-
 .staff {
   margin-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-top: 10px;
+  background-color: rgb(238, 238, 238);
 }
 .staff h1 {
   padding-top: 30px;
@@ -21,15 +14,22 @@
   margin-top: 20px;
   padding-top: 30px;
   text-align: center;
-  margin-left: 25%;
 }
 
 .staff .item .imgstaff {
-  text-align: center;
-  margin-left: 0px;
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
+}
+.staff .item p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #22bbea;
+  text-align: center;
+}
+.staff .item span {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1336px) {
@@ -86,5 +86,38 @@
     border-radius: 50%;
     height: 110px;
     width: 110px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .staff {
+    height: 350px;
+    margin-top: 10px;
+    padding-top: 10px;
+
+    background-color: rgb(246, 245, 243);
+  }
+  .staff h1 {
+    font-size: 25px;
+    padding-bottom: 0px;
+    color: #22bbea;
+  }
+  .owl-theme {
+    color: rgb(51, 157, 243);
+  }
+  .staff .item {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .staff .item .imgstaff {
+    margin-top: -35px;
+    text-align: center;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+  }
+  .staff .item p {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }

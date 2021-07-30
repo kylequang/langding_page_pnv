@@ -1,7 +1,10 @@
 .needhelp_container {
   margin-top: 10px;
   padding-top: 10px;
-  background-color: rgb(243, 243, 243);
+  padding-bottom: 5%;
+  background-image: -moz-linear-gradient(-90deg, #fdfdfd 0%, white 100%);
+  background-image: -webkit-linear-gradient(-90deg, #ffffff 0%, white 100%);
+  background-image: -ms-linear-gradient(-90deg, #fdf5ee 0%, white 100%);
   display: block;
   overflow: hidden;
 }
@@ -13,9 +16,8 @@
 .needhelp_container .needhelp_content h4 {
   text-align: left;
   font: 700 24px/38px "Comfortaa", cursive;
-
   color: #22bbea;
-  padding: 20px 0 0px;
+  /* padding: 20px 0 0px; */
   /* max-width: 315px; */
 }
 
@@ -33,26 +35,26 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 4px;
+  height: 5px;
   width: 58px;
   background: #fd7611;
 }
 
 .needhelp_container .needhelp_content p {
   text-align: left;
-  font-size: 23px;
+  font-size: 30px;
   padding-top: 5px;
 }
 
 .needhelp_container .needhelp_content .needhelp_subcontent p {
-  font-size: 20px;
+  font-size: 25px;
   color: rgba(0, 0, 0, 0.702);
   padding-top: 10px;
   /* max-width: 400px; */
 }
 
 .needhelp_container .needhelp_content .needhelp_subcontent p:first-child {
-  padding-top: 55px;
+  padding-top: 25px;
 }
 
 .needhelp_container .needhelp_content .needhelp_subcontent .popup-youtube {
@@ -133,6 +135,10 @@
 }
 #button_playvideo a:hover {
   color: #22bbea;
+}
+.redirect h4 {
+  margin-top: -10px;
+  font-size: 60px;
 }
 .redirect h4:hover {
   color: #fd7611;

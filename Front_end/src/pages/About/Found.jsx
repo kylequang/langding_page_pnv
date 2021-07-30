@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Collapse } from "react-bootstrap";
-import Call_API from "../../services/CallAPI";
-
+import get_data from "../../services/get-data";
 class Found extends Component {
   constructor(props) {
     super(props);
@@ -12,13 +11,13 @@ class Found extends Component {
     };
   }
   componentDidMount = async () => {
-    await Call_API(`buildfoudation`, "GET", null).then((item) => {
-      this.setState({
-        buildfoundation: item.data,
-      });
+    this.setState({
+      buildfoundation: await get_data(
+        "buildfoudation",
+        this.state.buildfoundation
+      ),
     });
   };
-
   render() {
     return (
       <Container fluid className="container-found">
@@ -37,15 +36,7 @@ class Found extends Component {
                         <i className={item.icon} />
                       </span>
                       <span>{item.nameofbuild}</span>
-                      <p style={{ fontSize: "20px" }}>{item.descriptions}</p>
-
-                      <Collapse in={this.state.open}>
-                        <div id="value">
-                          <p style={{ fontSize: "20px" }}>
-                            {item.descriptions}
-                          </p>
-                        </div>
-                      </Collapse>
+                      <p>{item.descriptions}</p>
                     </Container>
                   </Container>
                 </Col>

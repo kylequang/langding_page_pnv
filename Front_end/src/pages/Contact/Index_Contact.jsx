@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 import Map from "./Map";
-
-import Contact_Address from "./Infor";
-
-import { Container, Row } from "react-bootstrap";
+import Address from "./Address";
+import { Col, Row } from "react-bootstrap";
+import FContact from "../../components/Form/FContact";
 class Index_Contact extends Component {
   render() {
     return (
-      <Container fluid>
-        <Contact_Address></Contact_Address>
-        <Map></Map>
-      </Container>
+      <>
+        <Row>
+          <Col>
+            <Address></Address>
+          </Col>
+          <Col>
+            <FContact></FContact>
+          </Col>
+        </Row>
+        <Row>
+          <Map></Map>
+        </Row>
+      </>
     );
   }
 }

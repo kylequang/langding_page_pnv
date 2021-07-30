@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import ModalVideo from "react-modal-video";
 
 import { PlayBtn } from "react-bootstrap-icons";
@@ -17,6 +17,10 @@ class NeedHelp extends Component {
   render() {
     return (
       <Container fluid className="needhelp_container">
+        <Image
+          className="d-block w-100"
+          src="https://i.ibb.co/fqqQWMw/needhelp.jpg"
+        />
         <Container>
           <Row>
             <Col sm={12} md={12} lg={12} className="needhelp_content">

@@ -9,7 +9,6 @@ import Index_ItNuoiIt from './pages/ItNuoiIt/Index_ItNuoiIt';
 import Index_Contact from "./pages/Contact/Index_Contact";
 import Index_Donation from "./pages/Donate/Index_Donation";
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
@@ -21,7 +20,6 @@ function App() {
           <Route path='/itnuoiit' component={Index_ItNuoiIt} />
           <Route path="/contact" exact component={Index_Contact} />
         </Switch>
-        <Footer></Footer>
       </Router>
     </>
   );

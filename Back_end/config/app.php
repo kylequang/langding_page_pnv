@@ -163,6 +163,10 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         
         Kreait\Laravel\Firebase\ServiceProvider::class,
+        
+       
+      
+       
 
         /*
          * Package Service Providers...
@@ -177,6 +181,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+       Srmklive\PayPal\Providers\PayPalServiceProvider::class,
     ],
 
     /*

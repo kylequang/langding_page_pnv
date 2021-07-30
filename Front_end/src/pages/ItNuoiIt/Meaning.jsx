@@ -26,38 +26,43 @@ class Meaning extends Component {
     };
     return (
       <Carousel responsive={responsive}>
-        <div>
+        <div className="mean">
           <Image
             className="d-block w-100"
-            src="images\ItnuoiIt\Title.png"
+            id="mean"
+            src="https://i.ibb.co/pjzvqxk/Title.png"
             fluid
           />
         </div>
-        <div>
+        <div className="mean">
           <Image
+            id="mean"
             className="d-block w-100"
-            src="images\ItnuoiIt\mean1.png"
+            src="https://i.ibb.co/cDzz8Yg/mean1.png"
             fluid
           />
         </div>
-        <div>
+        <div className="mean">
           <Image
+            id="mean"
             className="d-block w-100"
-            src="images\ItnuoiIt\mean2.png"
+            src="https://i.ibb.co/r3GhVYr/mean2.png"
             fluid
           />
         </div>
-        <div>
+        <div className="mean">
           <Image
+            id="mean"
             className="d-block w-100"
-            src="images\ItnuoiIt\mean3.png"
+            src="https://i.ibb.co/ZfQLsKk/mean3.png"
             fluid
           />
         </div>
-        <div>
+        <div className="mean">
           <Image
+            id="mean"
             className="d-block w-100"
-            src="images\ItnuoiIt\mean4.png"
+            src="https://i.ibb.co/KL9zbT7/mean4.png"
             fluid
           />
         </div>

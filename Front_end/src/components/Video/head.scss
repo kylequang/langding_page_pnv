@@ -12,7 +12,7 @@
   top: 90%;
   text-align: center;
   margin-left: 47%;
-  color: rgb(36, 186, 255);
+  color: rgb(12, 197, 243);
 }
 #slide a :hover {
   size: 100;
@@ -24,7 +24,7 @@
   #slide {
     height: 600px;
     width: 100%;
-    background-image: url("https://i.ibb.co/Yb96qkm/IMG-1184.jpg");
+    background-image: url("https://i.ibb.co/VSdqtVB/1520125542283-e-1632355200-v-beta-t-z-Hg-HDq-RD-avb-k-Qg6p-UHYHJJDNBn-RHm-SDKISSEu-LMTM.jpg");
   }
   .icon {
     size: 100;
@@ -33,7 +33,7 @@
     top: 32em;
     text-align: center;
     margin-left: 26rem;
-    color: #ebdc0c;
+    color: #f5310e;
   }
 }
 @media only screen and (max-width: 736px) {
@@ -42,15 +42,14 @@
     height: 200px;
     width: 100%;
     padding-top: 5px;
-    background-image: url("https://i.ibb.co/p3BXYbw/hq720.jpg");
+    background-image: url("https://i.ibb.co/KwLXJ2b/donate1.jpg");
   }
   .icon {
     position: relative;
     bottom: 0em;
-    top: 8em;
-    text-align: center;
-    margin-left: 9rem;
-    color: red;
+    top: 75%;
+    margin-left: 38%;
+    color: rgb(218, 19, 19);
   }
   #slide a :hover {
     size: 100;
@@ -61,18 +60,14 @@
 
 @media only screen and (max-width: 667px) {
   #slide {
-    width: 105px;
-    height: 200px;
-    width: 100%;
-    padding-top: 5px;
-    background-image: url("https://i.ibb.co/p3BXYbw/hq720.jpg");
+    height: 310px;
+    background-image: url("https://i.ibb.co/KwLXJ2b/donate1.jpg");
   }
   .icon {
     position: relative;
     bottom: 0em;
-    top: 8em;
-    text-align: center;
-    margin-left: 39%;
+    top: 75%;
+    margin-left: 36%;
     color: red;
   }
   #slide a :hover {

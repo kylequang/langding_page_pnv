@@ -1,0 +1,8 @@
+.slide .icon {
+  position: relative;
+  margin-left: 17%;
+  margin-top: -15%;
+}
+.slide a :hover {
+  color: rgb(238, 9, 9);
+}

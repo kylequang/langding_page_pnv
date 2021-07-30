@@ -1,4 +1,4 @@
-  <!-- Navigation -->
+   <!-- Navigation -->
   <nav style='background-color: rgb(163, 147, 147)' class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -109,17 +109,9 @@
                 </li>
 
                 <li>
-                    <a href="#"><i class="fas fa-feather"></i>Post<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="waitingfor">Chia sẻ cá nhân</a>
-                        </li>
-                        <li>
-                            <a href="blog_event">Sự kiện</a>
-                        </li>
-                      
-                    </ul>
-                    <!-- /.nav-second-level -->
+                    <a href="listdonate"><i class="fas fa-feather"></i>Payment<span class="fa arrow"></span></a>
+                   
+                 >
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-hands-helping"></i>Help and support<span class="fa arrow"></span></a>
